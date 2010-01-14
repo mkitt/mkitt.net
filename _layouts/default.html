@@ -1,12 +1,65 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<title>Matthew Kitt :: {{ page.title }}</title>
-	<meta name="author" content="Matthew Kitt">
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+  <meta content="en-us" http-equiv="Content-Language" />
+  <meta content="Page description" name="description" />
+  <meta name="author" content="Matthew Kitt">
+  <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+  <link href="css/screen.css" rel="stylesheet" type="text/css" />
+  <link rel="alternate" type="application/atom+xml" title="Title - Atom" href="http://feeds2.feedburner.com/mkitt" />
+	<title>mkitt :: {{ page.title }}</title>
 </head>
 <body>
-  <h1>{{ page.title }}</h1>
-  {{ content }}
+  <div id="header" >
+    <!--<h1>{{ page.title }}</h1>-->
+  </div>
+  <div id="nav">
+    <div class="column-left">
+        <ul>
+        <li><a href="" title="home">home</a></li>
+        <li><a href="" title="about">about</a></li>
+      </ul>
+    </div>
+    <div class="column-right">
+      <div class="vr-skinny"></div>
+      <div class="vr-wide-fill"></div>
+      <div class="vr-skinny"></div>
+    </div>
+  </div>
+  <div id="section">
+    <div class="column-left">
+      <div class="article">
+        {{ content }}
+      </div>
+    </div>
+    <div class="column-right">
+      <div id="aside">
+        <h3>Archives</h3>
+        <ul>
+          <li><a href="#" title="This Is A Title">This Is A Title</a> </li>
+          <li><a href="#" title="Here's A Story">Here's A Story</a> </li>
+          <li><a href="#" title="I Got One For You">I Got One For You</a> </li>
+          <li><a href="#" title="The State Of Things">The State Of Things</a> </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div id="footer">
+    <div class="column-left">
+      <ul>
+        <li><a href="http://www.github.com/mkitt" title="github: mkitt">github: mkitt</a> </li>
+        <li><a href="http://www.github.com/factorylabs" title="github: factory">github: factory</a> </li>
+        <li><a href="http://www.twitter.com/matthewkitt" title="twitter">twitter</a> </li>
+        <li><a href="http://www.linkedin.com/pub/matthew-kitt/4/9b1/934" title="linkedin">linkedin</a> </li>
+      </ul>
+    </div>
+    <div class="column-right">
+      <div class="vr-skinny"></div>
+      <div class="vr-wide-fill"></div>
+      <div class="vr-skinny"></div>
+    </div>
+  </div>
 </body>
 </html>
