@@ -6,20 +6,19 @@
   <meta content="en-us" http-equiv="Content-Language" />
   <meta content="Page description" name="description" />
   <meta name="author" content="Matthew Kitt">
-  <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
-  <link href="css/screen.css" rel="stylesheet" type="text/css" />
-  <link rel="alternate" type="application/atom+xml" title="Title - Atom" href="http://feeds2.feedburner.com/mkitt" />
+  <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+  <link href="/css/screen.css" rel="stylesheet" type="text/css" media="screen, projection" />
+  <link rel="alternate" type="application/atom+xml" title="mkitt" href="http://feeds.feedburner.com/mkitt" />
 	<title>mkitt :: {{ page.title }}</title>
 </head>
-<body>
+<body {% if page.location %}id="{{ page.location }}"{% endif %}>
   <div id="header" >
-    <!--<h1>{{ page.title }}</h1>-->
   </div>
   <div id="nav">
     <div class="column-left">
         <ul>
-        <li><a href="" title="home">home</a></li>
-        <li><a href="" title="about">about</a></li>
+        <li class="home"><a href="/" title="home">home</a></li>
+        <li class="about"><a href="/about.html" title="about">about</a></li>
       </ul>
     </div>
     <div class="column-right">
@@ -38,10 +37,11 @@
       <div id="aside">
         <h3>Archives</h3>
         <ul>
-          <li><a href="#" title="This Is A Title">This Is A Title</a> </li>
-          <li><a href="#" title="Here's A Story">Here's A Story</a> </li>
-          <li><a href="#" title="I Got One For You">I Got One For You</a> </li>
-          <li><a href="#" title="The State Of Things">The State Of Things</a> </li>
+          {% for post in site.posts %}
+            <li>
+              <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+            </li>
+          {% endfor %}
         </ul>
       </div>
     </div>

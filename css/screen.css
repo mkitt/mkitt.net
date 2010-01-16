@@ -22,13 +22,16 @@ a:link, a:visited {
   color: #DC0000;
 }
 a:hover, a:active {
-  background: #333;
+  background: #0e1118;
   text-decoration: none;
   color: #FFF;
 }
 
-a img {
+img {
   border-width: 0;
+  float: left;
+  display: block;
+  margin: 0 10px 10px 2px;
 }
 
 .clear {
@@ -55,6 +58,7 @@ h1, h2, h3 {
   font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   font-weight: bolder;
   letter-spacing: -1px;
+  color: #0e1118;
 }
 
 h1 {
@@ -148,7 +152,13 @@ li {
 }
 #nav a:hover, #nav a:active, #footer a:hover, #footer a:active {
   background: #FFF;
-  color: #333;
+  color: #0e1118;
+}
+
+#home .home a:link, #home .home a:visited, #home .home a:hover, #home .home a:active,
+#about .about a:link, #about .about a:visited, #about .about a:hover, #about .about a:active {
+  background: #FFF;
+  color: #0e1118;
 }
 
 .article, #aside {
@@ -166,6 +176,9 @@ li {
   font-size: 11px;
   font-weight: bold;
 }
+#aside a:visited {
+  text-decoration: none;
+}
 
 .vr-skinny, .vr-wide-fill {
   float: left;
@@ -176,6 +189,6 @@ li {
   width: 5px;
 }
 .vr-wide-fill {
-  background: #333;
+  background: #0e1118;
   width: 200px;
 }
