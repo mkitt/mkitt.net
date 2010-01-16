@@ -100,7 +100,7 @@ li {
   width: 210px;
 }
 
-#header, #nav, #section, #footer {
+#header, #nav, #section, #footer, #copyright {
   background-color: #FFF;
   display: block;
   overflow: hidden;
@@ -168,7 +168,7 @@ li {
   margin: 5px 0 5px 5px;
 }
 #aside {
-  margin: 17px 5px 0 10px;
+  margin: 17px 5px 0 15px;
 }
 
 #aside ul {
@@ -178,6 +178,25 @@ li {
 }
 #aside a:visited {
   text-decoration: none;
+}
+
+#copyright {
+  margin-top: 10px;
+  margin-left: 5px;
+  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  font-size: 10px;
+  color: #999;
+}
+#copyright a:link, #copyright a:visited {
+  background: none;
+  text-decoration: underline;
+  color: #999;
+}
+
+#copyright a:hover, #copyright a:active {
+  background: #0e1118;
+  text-decoration: none;
+  color: #FFF;
 }
 
 .vr-skinny, .vr-wide-fill {
