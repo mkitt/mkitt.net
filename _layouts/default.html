@@ -1,72 +1,37 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
-<head>
-	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-  <meta content="en-us" http-equiv="Content-Language" />
-  <meta content="The adventures of mkitt" name="description" />
-  <meta name="author" content="Matthew Kitt" />
-  <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-  <link href="/css/screen.css" rel="stylesheet" type="text/css" media="screen, projection" />
-  <link rel="alternate" type="application/atom+xml" title="mkitt" href="http://feeds.feedburner.com/mkitt" />
-	<title>mkitt :: {{ page.title }}</title>
-</head>
-<body {% if page.location %}id="{{ page.location }}"{% endif %}>
-  <div id="header" >
-  </div>
-  <div id="nav">
-    <div class="column-left">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  	<meta charset="utf-8" />
+    <meta content="en-us" http-equiv="Content-Language" />
+    <meta content="The adventures of mkitt" name="description" />
+    <meta name="author" content="Matthew Kitt" />
+    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="/css/screen.css" rel="stylesheet" type="text/css" media="screen, projection" />
+    <link rel="alternate" type="application/atom+xml" title="mkitt" href="http://feeds.feedburner.com/mkitt" />
+    <!--[if IE]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  	<title>mkitt :: {{ page.title }}</title>
+  </head>
+  <body {% if page.location %}id="{{ page.location }}"{% endif %}>
+    <div id="topbar">
+      <nav>
         <ul>
-        <li class="home"><a href="/" title="home">home</a></li>
-        <li class="about"><a href="/about.html" title="about">about</a></li>
-      </ul>
-    </div>
-    <div class="column-right">
-      <div class="vr-skinny"></div>
-      <div class="vr-wide-fill"></div>
-      <div class="vr-skinny"></div>
-    </div>
-  </div>
-  <div id="section">
-    <div class="column-left">
-      <div class="article">
-        {{ content }}
-      </div>
-    </div>
-    <div class="column-right">
-      <div id="aside">
-        <h3>Archives</h3>
-        <ul>
-          {% for post in site.posts %}
-            <li>
-              <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-            </li>
-          {% endfor %}
+          <li class="home"><a href="/" title="home">home</a></li>
+          <li class="about"><a href="/about.html" title="about">about</a></li>
+          <li class="projects"><a href="/projects.html" title="projects">projects</a></li>
         </ul>
-      </div>
+      </nav>
     </div>
-  </div>
-  <div id="footer">
-    <div class="column-left">
-      <ul>
-        <li><a href="http://www.github.com/mkitt" title="github: mkitt">github: mkitt</a> </li>
-        <li><a href="http://www.github.com/factorylabs" title="github: factory">github: factory</a> </li>
-        <li><a href="http://www.twitter.com/matthewkitt" title="twitter">twitter</a> </li>
-        <li><a href="http://www.linkedin.com/pub/matthew-kitt/4/9b1/934" title="linkedin">linkedin</a> </li>
-      </ul>
+    <div id="content">
+      <article>
+        {{ content }}
+      </article>
     </div>
-    <div class="column-right">
-      <div class="vr-skinny"></div>
-      <div class="vr-wide-fill"></div>
-      <div class="vr-skinny"></div>
+    <div id="botbar">
     </div>
-  </div>
-  <div id="copyright">
-    <div class="column-left">
-      Powered by <a href="http://github.com/mojombo/jekyll">Jekyll</a> :: Hosted by <a href="http://github.com/mkitt/mkitt.github.com">GitHub</a> :: Licensed under <a href="http://creativecommons.org/licenses/by-nc-nd/3.0/us/">Creative Commons</a>
-    </div>
-    <div class="column-right">
-    </div>
-  </div>
-</body>
+    <footer>
+      <p>Powered by <a href="http://github.com/mojombo/jekyll">Jekyll</a> :: Hosted by <a href="http://github.com/mkitt/mkitt.github.com">GitHub</a> :: Licensed under <a href="http://creativecommons.org/licenses/by-nc-nd/3.0/us/">Creative Commons</a></p>
+    </footer>
+  </body>
 </html>
