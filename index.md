@@ -3,4 +3,4 @@ layout: default
 title: home
 location: home
 ---
-&nbsp;
+![mansfield](images/mansfield.jpg)
