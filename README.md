@@ -1,4 +1,6 @@
 # About #
+
+
 Work in progress blog/site for Matthew Kitt. For now, the site can be [viewed here](http://mkitt.github.com/ "mkitt").
 
 # License #

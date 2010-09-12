@@ -1,0 +1,102 @@
+
+/* Node Level Declarations
+ ******************************************************************************/
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #202020 url(../images/bg.png) repeat top;
+  font: normal normal normal 100%/normal Helvetica, Arial, sans-serif;
+  color: #000; 
+  text-shadow: #333 0 1px 3px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 1em;
+  font-weight: bold;
+  margin: 0;
+}
+
+h1 { font-size: 3.0em; }
+h2 { font-size: 1.3em; }
+h3 { font-size: 1.2em; }
+
+
+a {
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+  color: #2264A3;
+  text-decoration: none;
+  border-bottom: 0.125em dotted #E52253;
+  text-shadow: #000 0 1px 3px;
+}
+
+img {
+  border: 0;
+}
+
+/* HTML5 Tags */
+article, aside, audio, canvas, figure, footer, header, hgroup, 
+mark, meter, nav, output, progress, section, summary, time, video {
+  display: block;
+}
+
+/* Layout
+ ******************************************************************************/
+.body {
+  clear: both;
+  margin: 0 auto; 
+  width: 980px;
+  overflow: hidden;
+}
+
+.header {
+  
+}
+
+.experiment {
+  border: 2px solid #000;
+  border-bottom: 1px solid #333;
+/*  border-right-color: #444;*/
+  background: rgba(0, 0, 0, 0.5);
+  width: 980px;
+  height: 400px;
+}
+
+.links {
+  margin-top: 1em;
+}
+
+  .links h2 {
+    float: left;
+  }
+  
+  .links h3 {
+    float: right;
+  }
+  
+  .links ul {
+    margin-top: 0.3em;
+    padding: 0;
+    float: left;
+    list-style: none;
+  }
+  
+  .links ul li {
+    float: left;
+    margin-left: 0.75em;
+  }
+  
+  .links ul li:last-child {
+    margin-right: 0.75em;
+  }
+
+
+
