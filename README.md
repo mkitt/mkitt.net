@@ -1,9 +1,8 @@
-# About #
+## About ##
 
+The site can be [viewed here](http://mkitt.github.com/ "mkitt").
 
-Work in progress blog/site for Matthew Kitt. For now, the site can be [viewed here](http://mkitt.github.com/ "mkitt").
-
-# License #
+## License ##
 All original textual and imagery content is licensed under the [Creative Commons Attribution-Noncommercial-No Derivative Works 3.0 United States License](http://creativecommons.org/licenses/by-nc-nd/3.0/us/ "Creative Commons").  
 
 All other material is licensed under [The MIT License](http://www.opensource.org/licenses/mit-license.php "MIT")  
@@ -15,6 +14,3 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.  
   
 THE SOFTWARE IS PROVIDED ‘AS IS’, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE
-
-# Resources #
-Powered by [Jekyll](http://github.com/mojombo/jekyll "Jekyll") for static site generation.
