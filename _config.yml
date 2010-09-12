@@ -1,7 +1,0 @@
-auto: true
-server: true
-server_port: 3000
-markdown: rdiscount
-pygments: true
-site_title: Matthew Kitt
-current_release: 1.0.0

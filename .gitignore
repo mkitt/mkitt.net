@@ -18,3 +18,4 @@ db/sphinx/
 .launch
 _site/
 drafts/
+.livereload
