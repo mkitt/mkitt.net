@@ -1,7 +1,9 @@
-<img src="http://www.gravatar.com/avatar/4f927d146db729ae5602eb6d8b3aa8fc.png" title="Eddie Gravatar" alt="eddie" style="float:right;" />
+<img src="http://a1.twimg.com/profile_images/97754698/maiden-big.jpg" title="Eddie Gravatar" alt="eddie" style="width: 150px; height: 150px;" />
+
 Developer specializing in front-end technologies
 
-&nbsp;
-
+<br />
 Currently employed at [Factory Design Labs](http://www.factorylabs.com/)
+
+[View Resume](/resume/)
 
