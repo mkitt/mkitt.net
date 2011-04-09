@@ -1,0 +1,158 @@
+
+body
+  background body_bg
+  color body_color
+  -webkit-font-smoothing antialiased
+
+h1, h2, h3, h4, h5, h6
+  color header_color
+  font-weight bold
+  margin 1.0em 0
+
+h1
+  font-size 200%
+  margin-top 1em
+
+h2
+  border-bottom body_border
+  font-size 180%
+  padding-bottom 0.2em
+  padding-top 0.5em
+
+h3
+  font-size 140%
+  margin 1em 0 0.5em 0
+
+h4
+  font-size 140%
+  margin 1em 0 0.5em 0
+
+h5
+  font-size 120%
+  margin 0.5em 0 0.5em 0
+
+h6
+  font-size 120%
+  font-style italic
+  margin 0.5em 0 0.5em 0
+
+h1 a, h1 a:active, h1 a:visited,
+h2 a, h2 a:active, h2 a:visited,
+h3 a, h3 a:active, h3 a:visited,
+h4 a, h4 a:active, h4 a:visited,
+h5 a, h5 a:active, h5 a:visited,
+h6 a, h6 a:active, h6 a:visited
+  color header_color
+  text-decoration none
+
+h1 a:hover,
+h2 a:hover,
+h3 a:hover,
+h4 a:hover,
+h5 a:hover,
+h6 a:hover
+  color header_hover
+
+a, a:active, a:visited
+  color: body_link
+  text-decoration none
+  -webkit-transition-property color -webkit-box-shadow
+  -webkit-transition-duration 0.25s
+  -webkit-transition-timing-function ease-out
+
+a:hover
+  color body_hover
+
+a:link
+  -webkit-tap-highlight-color tap_highlight
+
+pre, code
+  background code_bg
+  border body_border
+  color code_color
+
+blockquote
+  border-left body_border
+  color block_color
+
+hr
+  border-top body_border
+
+table th
+  border-bottom th_border
+
+table td
+  border-bottom td_border
+
+::-moz-selection
+  background select_bg
+  color select_color
+  text-shadow none
+
+::selection
+  background select_bg
+  color select_color
+  text-shadow none
+
+// ----------------------------------------------------------------------------
+#container
+  margin 0 auto
+  overflow hidden
+  width 748px
+
+#ribbon
+  margin: 0
+  position absolute
+  top 0
+  right 0
+  z-index 10
+
+a #ribbon,
+a:active #ribbon,
+a:visited #ribbon
+  -webkit-transition-property color -webkit-box-shadow opacity
+  -webkit-transition-duration 0.25s
+  -webkit-transition-timing-function ease-out
+  opacity 0.8
+
+a:hover #ribbon
+  opacity: 1.0
+
+header
+  margin 1em 0
+
+footer
+  font-size 100%
+  margin 2em 0
+
+footer hr
+  margin 0 0 0.5em 0
+
+header nav,
+footer nav
+  float right
+
+header nav ul li,
+footer nav ul li
+  float left
+  margin-left 1em
+
+header nav ul li a
+  background menu_bg
+  padding 2px 12px
+  border menu_border
+  -webkit-border-radius menu_border_radius
+  -moz-border-radius menu_border_radius
+  -webkit-box-shadow menu_shadow_dimensions menu_shadow_static
+  -moz-box-shadow menu_shadow_dimensions menu_shadow_static
+
+header nav ul li a:hover
+  -webkit-box-shadow menu_shadow_dimensions menu_shadow_hover
+  -moz-box-shadow menu_shadow_dimensions menu_shadow_hover
+
+header nav ul li a.active
+  color body_hover
+  cursor default
+  -webkit-box-shadow menu_shadow_dimensions menu_shadow_active
+  -moz-box-shadow menu_shadow_dimensions menu_shadow_active
+
