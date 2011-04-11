@@ -1,0 +1,16 @@
+{
+  "head"     : "https://github.com/mkitt/mkitt.github.com/raw/master/app/views/head.html",
+  "tail"     : "https://github.com/mkitt/mkitt.github.com/raw/master/app/views/tail.html",
+  "mddir"    : "doc/pages",
+  "htmldir"  : "/",
+  "headvars" : {
+    "@TITLE"    : "mkitt",
+    "@DESC"     : "Current GitHub projects for Matthew Kitt",
+    "@CSS"      : "/stylesheets/white.css",
+    "@PROJECT"  : "http://github.com/mkitt/mkitt.github.com",
+    "@RIBBON"   : "http://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png",
+    "@NAV"      : {
+      "Home"      : "/"
+    }
+  }
+}
