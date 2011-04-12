@@ -6,7 +6,7 @@ CSS = $(STYL:.styl=.css)
 all: html css
 
 html:
-	@ghpagen
+	@pagen
 
 css: $(CSS)
 
