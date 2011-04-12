@@ -1,6 +1,6 @@
 ## Projects
 
-[ghpagen](https://github.com/mkitt/ghpagen): Simplify the creation of GitHub pages
+[pagen](https://github.com/mkitt/pagen): Simplify the creation of generic html pages generated from markdown
 
 [watchn](https://github.com/mkitt/watchn): Intelligently execute targets on file/directory changes
 
