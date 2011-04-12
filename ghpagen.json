@@ -1,8 +1,9 @@
 {
-  "head"     : "https://github.com/mkitt/mkitt.github.com/raw/master/app/views/head.html",
-  "tail"     : "https://github.com/mkitt/mkitt.github.com/raw/master/app/views/tail.html",
+  "head"     : "app/views/head.html",
+  "tail"     : "app/views/tail.html",
   "mddir"    : "doc/pages",
   "htmldir"  : "/",
+  "snippet"  : "<li><a href='@HREF'>@LINK</a></li>\n\t",
   "headvars" : {
     "@TITLE"    : "mkitt",
     "@DESC"     : "Current GitHub projects for Matthew Kitt",
@@ -14,3 +15,4 @@
     }
   }
 }
+
