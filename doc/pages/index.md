@@ -1,8 +1,8 @@
 ## Projects
 
-[pagen](https://github.com/mkitt/pagen): Simplify the creation of generic html pages generated from markdown
+[watchn](https://github.com/mkitt/watchn): Intelligently and continuously auto execute targets on file/directory changes
 
-[watchn](https://github.com/mkitt/watchn): Intelligently execute targets on file/directory changes
+[pagen](https://github.com/mkitt/pagen): Simplify the creation of generic html pages generated from markdown
 
 [assertn](https://github.com/mkitt/assertn): A very simple, lightweight reporter for running Node.js assertions
 
