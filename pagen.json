@@ -11,8 +11,7 @@
     "@PROJECT"  : "http://github.com/mkitt/mkitt.github.com",
     "@RIBBON"   : "http://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png",
     "@NAV"      : {
-      "Home"    : "/",
-      "Elements"    : "/elements.html"
+      "Home"    : "/"
     }
   }
 }
