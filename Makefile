@@ -1,21 +1,29 @@
 
-STYL = app/stylesheets/white.styl
+STYL = app/stylesheets/dark.styl \
+			 app/stylesheets/white.styl \
+			 app/stylesheets/solardark.styl \
+			 app/stylesheets/solarlight.styl
+
 CSS = $(STYL:.styl=.css)
 
 
-all: html css
+all: site css
 
-html:
-	@pagen
+site:
+	@pagen pagen.json
 
 css: $(CSS)
-
-view:
-	open http://local.github-mkitt/
 
 %.css: %.styl
 	@stylus --compress < $< > stylesheets/$(shell basename $@)
 	@echo stylesheets/$(shell basename $@) built
 
-.PHONY: all html css view
+view:
+	open http://local.github-mkitt/
+
+publish: all
+	@rm elements.html
+
+
+.PHONY: all site css view publish
 

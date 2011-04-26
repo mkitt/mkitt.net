@@ -9,6 +9,7 @@ function notify(msg, growl) {
   }
 }
 
+
 module.exports.init = function(watchn) {
 
   watchn.watch('styles', ['./app/stylesheets/'], function(options) {
@@ -18,6 +19,17 @@ module.exports.init = function(watchn) {
           notify(error.message, {name: 'Stylus', msg: 'Build Failed!'});
         else
           notify('styles generated');
+      });
+    }
+  });
+
+  watchn.watch('markup', ['./app/views/', './doc/', 'pagen.json'], function(options) {
+    if (options.curr > options.prev) {
+      exec('make site', function(error, stdout, stderr) {
+        if (error !== null)
+          notify(error.message, {name: 'Markup', msg: 'Build Failed!'});
+        else
+          notify('markup generated');
       });
     }
   });
