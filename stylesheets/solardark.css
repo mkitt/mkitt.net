@@ -1,0 +1,74 @@
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{background:transparent;border:0;font-size:100%;font:inherit;margin:0;outline:0;padding:0;vertical-align:baseline}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:"";content:none}
+table{border-collapse:collapse;border-spacing:0}
+hr{border:0;border-top:1px dotted #f0f;display:block;height:1px;margin:0;padding:0}
+body{font:14px / 1.5 sans-serif}
+select,input,textarea,button{font:99% sans-serif}
+pre,code,kbd,samp{font-family:monospace,sans-serif;font-size:95%}
+html{overflow-y:scroll}
+ul,ol{margin-left:2em}
+ol{list-style-type:decimal}
+nav ul,nav li{list-style-image:none;list-style:none;margin:0}
+small{font-size:85%}
+strong,th{font-weight:bold}
+td{vertical-align:top}
+sub,sup{font-size:75%;line-height:0;position:relative}
+sup{top:-.5em}
+sub{bottom:-.25em}
+pre{margin:1em 0;padding:.5em;white-space:pre;white-space:pre-wrap;word-wrap:break-word}
+code{padding:0 .2em}
+pre code{padding:0;border:none}
+blockquote{font-style:italic;margin:1em;padding-left:.5em}
+dt{font-weight:bold}
+dd{margin-left:1em;margin-bottom:1em}
+table{margin:1em 0}
+table th{text-align:left;padding:.2em 1em}
+table td{text-align:left;padding:.2em 1em}
+a:hover,a:active{outline:none}
+img{margin:1em 0}
+body{background:#002b36;color:#839496;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4,h5,h6{color:#cb4b16;font-weight:bold;margin:1em 0}
+h1{font-size:200%;margin-top:1em}
+h2{border-bottom:1px dotted #657b83;font-size:180%;padding-bottom:.2em;padding-top:.5em}
+h3{font-size:140%;margin:1em 0 .5em 0}
+h4{font-size:140%;margin:1em 0 .5em 0}
+h5{font-size:120%;margin:.5em 0 .5em 0}
+h6{font-size:120%;font-style:italic;margin:.5em 0 .5em 0}
+h1 a,h1 a:active,h1 a:visited,h2 a,h2 a:active,h2 a:visited,h3 a,h3 a:active,h3 a:visited,h4 a,h4 a:active,h4 a:visited,h5 a,h5 a:active,h5 a:visited,h6 a,h6 a:active,h6 a:visited{color:#cb4b16;text-decoration:none}
+h1 a:hover,h2 a:hover,h3 a:hover,h4 a:hover,h5 a:hover,h6 a:hover{color:#d30102}
+a,a:active,a:visited{color:#268bd2;text-decoration:none;-webkit-transition-property:color -webkit-box-shadow;-webkit-transition-duration:.25s;-webkit-transition-timing-function:ease-out}
+a:hover{color:#586e75}
+a:link{-webkit-tap-highlight-color:#268bd2}
+pre,code{background:#073642;border:1px dotted #657b83;color:#eee8d5}
+blockquote{border-left:1px dotted #657b83;color:#eee8d5}
+hr{border-top:1px dotted #657b83}
+table th{border-bottom:1px solid #839496}
+table td{border-bottom:1px dotted #657b83}
+::-moz-selection{background:#073642;color:#839496;text-shadow:none}
+::selection{background:#073642;color:#839496;text-shadow:none}
+#container{margin:0 auto;overflow:hidden;width:748px}
+#ribbon{margin:0;position:absolute;top:0;right:0;z-index:10}
+a #ribbon,a:active #ribbon,a:visited #ribbon{-webkit-transition-property:color -webkit-box-shadow opacity;-webkit-transition-duration:.25s;-webkit-transition-timing-function:ease-out;opacity:.8}
+a:hover #ribbon{opacity:1}
+header{margin:1em 0}
+footer{font-size:100%;margin:2em 0}
+footer hr{margin:0 0 .5em 0}
+header nav,footer nav{float:right}
+header nav ul li,footer nav ul li{float:left;margin-left:1em}
+header nav ul li a{font-weight:bold;text-shadow:none}
+header nav ul li a.active{color:#586e75;cursor:default;-webkit-transition-property:color -webkit-box-shadow;-webkit-transition-duration:1s;-webkit-transition-timing-function:ease-out}
+.ie7 img{-ms-interpolation-mode:bicubic}
+.ir{background-repeat:no-repeat;display:block;overflow:hidden;text-align:left;direction:ltr;text-indent:-999em}
+.hidden{display:none;visibility:hidden}
+.invisible{visibility:hidden}
+.clearfix:before .clearfix:after{content:"\0020";display:block;height:0;visibility:hidden}
+.clearfix:after{clear:both}
+.clearfix{zoom:1}
+@media (min-device-width:1024px) and (max-width:960px),(min-device-width:768px) and (max-device-width:1024px) and (orientation:portrait){#ribbon{display:none}
+}@media (min-device-width:1024px) and (max-width:747px),(max-device-width:480px) and (orientation:landscape){#container{width:470px}
+#ribbon{display:none}
+}@media (min-device-width:1024px) and (max-width:469px),(max-device-width:480px) and (orientation:portrait){#container{width:310px}
+#ribbon{display:none}
+}
