@@ -6,4 +6,4 @@ Personal: [mkitt.net](http://mkitt.net/ "mkitt")
 
 Projects: [mkitt.github.com](http://mkitt.github.com/ "mkitt github")
 
-Work: [factorylabs.com](http://factorylabs.com/ "workn")
+Work: [bittheory.com](http://bittheory.com/ "workn")
