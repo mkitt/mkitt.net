@@ -1,16 +1,14 @@
 
-STYL = app/stylesheets/white.styl
+SHEET = app/stylesheets/application.sass
+CSS = $(SHEET:.sass=.css)
 
-CSS = $(STYL:.styl=.css)
+styles: $(CSS)
 
-css: $(CSS)
+%.css: %.sass
+	@bundle exec sass $< > stylesheets/$(shell basename $@)
 
-%.css: %.styl
-	@stylus --compress < $< > stylesheets/$(shell basename $@)
-	@echo stylesheets/$(shell basename $@) built
+clean:
+	rm -f stylesheets/$(shell basename $(CSS))
 
-publish: css
-
-
-.PHONY: css publish
+.PHONY: styles clean
 
