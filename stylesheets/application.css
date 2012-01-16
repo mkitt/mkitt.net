@@ -141,7 +141,13 @@ nav ul, nav ol {
 
 .container {
   margin: 100px auto; }
+  .container h1 {
+    margin-bottom: 50px; }
   .container img {
     margin: 0 auto;
     display: block;
     max-width: 100%; }
+  .container .sub {
+    margin: 0 auto;
+    width: 96px;
+    height: 96px; }
