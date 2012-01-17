@@ -140,14 +140,21 @@ nav ul, nav ol {
     margin-left: 0; }
 
 .container {
-  margin: 100px auto; }
-  .container h1 {
-    margin-bottom: 50px; }
-  .container img {
-    margin: 0 auto;
-    display: block;
-    max-width: 100%; }
-  .container .sub {
-    margin: 0 auto;
-    width: 96px;
-    height: 96px; }
+  margin: 75px auto 0; }
+
+.content h1 > img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%; }
+
+.utility {
+  margin-top: 50px;
+  text-align: center; }
+  .utility ul li {
+    display: inline;
+    margin-right: 1em; }
+    .utility ul li:last-child {
+      margin-right: 0; }
+  .utility ul li h2 {
+    display: inline;
+    font-size: 1.5em; }
