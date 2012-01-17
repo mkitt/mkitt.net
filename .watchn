@@ -1,0 +1,11 @@
+
+var styles = './app/stylesheets/'
+
+module.exports.init = function(watchn) {
+
+  watchn.watch('sass', [styles], function(options) {
+    watchn.execute('make styles', options, 'sass', false, false)
+  })
+
+}
+
