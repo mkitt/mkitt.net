@@ -7,3 +7,6 @@ Personal: [mkitt.net](http://mkitt.net/ "mkitt")
 Projects: [mkitt.github.com](http://mkitt.github.com/ "mkitt github")
 
 Work: [bittheory.com](http://bittheory.com/ "workn")
+
+
+<img src="http://mkitt.net/images/octo-mkitt.png" width="80" height="80" />
