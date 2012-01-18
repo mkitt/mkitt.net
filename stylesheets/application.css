@@ -116,8 +116,29 @@ address {
 h1, h2, h3, h4, h5, h6 {
   color: #444444; }
 
+h1 {
+  font-size: 2.125em; }
+
+h2 {
+  font-size: 1.625em;
+  border-bottom: 1px solid #999999;
+  margin: 16px 0 8px; }
+
+h3 {
+  font-size: 1.25em; }
+
+h4 {
+  font-size: 1.125em; }
+
+h5 {
+  font-size: 1.125em; }
+
+h6 {
+  font-size: 1.125em; }
+
 p {
-  font-style: normal; }
+  font-style: normal;
+  font-size: 0.875em; }
 
 ul {
   list-style: disc inside; }
@@ -140,11 +161,11 @@ nav ul, nav ol {
     margin-left: 0; }
 
 .container {
-  margin: 75px auto 0; }
+  margin: 0 auto 0; }
 
 .content h1 > img {
   display: block;
-  margin: 0 auto;
+  margin: 75px auto 0;
   max-width: 100%; }
 
 .utility {
@@ -157,4 +178,15 @@ nav ul, nav ol {
       margin-right: 0; }
   .utility ul li h2 {
     display: inline;
+    font-size: 1.5em;
+    border: 0;
+    margin: 0; }
+
+.footer {
+  margin: 25px 0; }
+  .footer h3 {
+    color: #f1f1f1;
+    text-align: center;
     font-size: 1.5em; }
+    .footer h3:before, .footer h3:after {
+      content: "."; }

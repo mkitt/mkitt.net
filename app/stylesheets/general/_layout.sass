@@ -1,11 +1,13 @@
 
+// Primary container used everywhere
 .container
-  margin: 75px auto 0
+  margin: 0 auto 0
 
+// index.html
 .content
   h1 > img
     display: block
-    margin: 0 auto
+    margin: 75px auto 0
     max-width: 100%
 
 .utility
@@ -21,4 +23,15 @@
   ul li h2
     display: inline
     font-size: 1.5em
+    border: 0
+    margin: 0
+
+.footer
+  margin: 25px 0
+  h3
+    color: #f1f1f1
+    text-align: center
+    font-size: 1.5em
+    &:before, &:after
+      content: "."
 

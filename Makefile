@@ -1,14 +1,24 @@
 
-SHEET = app/stylesheets/application.sass
-CSS = $(SHEET:.sass=.css)
+HEAD = app/templates/head.html
+TAIL = app/templates/tail.html
+SASS = app/stylesheets/application.sass
 
-styles: $(CSS)
+application.css: $(SASS)
+	@rm -f stylesheets/$@
+	@sass $< > stylesheets/$@
 
-%.css: %.sass
-	@sass $< > stylesheets/$(shell basename $@)
+index.html:
+	@rm $@
+	@cat $(HEAD) app/templates/$@ $(TAIL) > $@
+
+resume:
+	@cat resume/resume.md | marked > resume/resume.html
+	@cat $(HEAD) resume/resume.html $(TAIL) > resume/index.html
+	@rm resume/resume.html
 
 clean:
-	rm -f stylesheets/$(shell basename $(CSS))
+	@rm -f stylesheets/application.css
+	@rm index.html
 
-.PHONY: styles clean
+.PHONY: index.html application.css resume clean
 

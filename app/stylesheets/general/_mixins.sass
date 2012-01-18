@@ -1,0 +1,51 @@
+
+// Converts target `px` value to `em` in context constraints
+@function to_em($target_px, $context: $base_px)
+  @return ($target_px / $context) * 1em
+
+// Converts target `px` value to `percentage` in context constraints
+@function to_percent($target_px, $context: $base_wv)
+  @return percentage($target_px / $context)
+
+// Wrapper around setting padding and margins using ems
+// TODO: Need to figure out where context goes, needs to be related to the individual value
+@function em_spacing($top, $right: nil, $bottom: nil, $left: nil)
+  $rv: $right
+  $bv: $bottom
+  $lv: $left
+  @if ($right == nil)
+    $rv: $top
+    $bv: $top
+    $lv: $top
+  @else if ($bottom == nil)
+    $rv: $right
+    $bv: $top
+    $lv: $right
+  @else if ($left == nil)
+    $rv: $right
+    $bv: $bottom
+    $lv: $right
+
+  @return to_em($top) to_em($rv) to_em($bv) to_em($lv)
+
+// Wrapper around setting padding and margins using percentages
+// TODO: Need to figure out where context goes, needs to be related to the individual value
+@function percent_spacing($top, $right: nil, $bottom: nil, $left: nil)
+  $rv: $right
+  $bv: $bottom
+  $lv: $left
+  @if ($right == nil)
+    $rv: $top
+    $bv: $top
+    $lv: $top
+  @else if ($bottom == nil)
+    $rv: $right
+    $bv: $top
+    $lv: $right
+  @else if ($left == nil)
+    $rv: $right
+    $bv: $bottom
+    $lv: $right
+
+  @return to_percent($top) to_percent($rv) to_percent($bv) to_percent($lv)
+
