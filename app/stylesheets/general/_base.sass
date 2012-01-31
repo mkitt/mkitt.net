@@ -2,6 +2,7 @@
 // Top level base elements and styles
 html
   font-size: 100%
+  line-height: 1.2
   overflow-y: scroll
   -webkit-tap-highlight-color: rgba(0,0,0,0)
   -webkit-font-smoothing: antialiased
@@ -14,10 +15,10 @@ body
   font-family: $sans_norm
 
 hr
-  display: block
-  height: 1px
   border: 0
   border-top: 1px dotted $border_color
+  display: block
+  height: 1px
 
 ::-moz-selection
   background: $select_bg
@@ -57,5 +58,6 @@ a:link
 // Embedded Content
 img
   border: 0
+  max-width: 100%
   -ms-interpolation-mode: bicubic
 

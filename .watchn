@@ -4,6 +4,7 @@ var head = './app/templates/head.html'
 var tail = './app/templates/tail.html'
 var home = './app/templates/index.html'
 var resume = './resume/resume.md'
+var elements = './app/templates/elements.md'
 
 module.exports.init = function(watchn) {
 
@@ -17,6 +18,10 @@ module.exports.init = function(watchn) {
 
   watchn.watch('resume', [head, tail, resume], function(options) {
     watchn.execute('make resume', options, null, false, true)
+  })
+
+  watchn.watch('elements', [head, tail, elements], function(options) {
+    watchn.execute('make elements.html', options, null, false, true)
   })
 }
 

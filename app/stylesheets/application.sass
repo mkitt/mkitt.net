@@ -1,6 +1,12 @@
 
+// fluid sizing
+$base_px: 16
+$base_width: 760
+
 // fonts
 $sans_norm: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif
+$serif_norm: "Palatino Linotype", "Palatino", serif
+$serif_norm: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif
 $code_norm: "Bitstream Vera Sans Mono", "Menslo LG M", "Menlo", "Monaco", monospace
 
 // colors
@@ -31,7 +37,7 @@ $blue: #268bd2
 $indigo: #4b0082
 $violet: #ee82ee
 
-// base.scss
+// base.sass
 $body_bg: $white
 $body_color: $grey4
 $border_color: $grey4
@@ -47,17 +53,31 @@ $link_focus: $blue
 $link_highlight: $blue
 $tap_highlight: $blue
 
-// typography.scss
+// typography.sass
 $header_color: $grey4
+$code_border: #dedede
+$code_bg: #f8f8ff
+$pre_border: #dedede
+$pre_bg: #f8f8ff
 
-// fluid sizing
-$base_px: 16
-$base_wv: 960
+// tables.sass
+$table_bg: transparent
+$table_primary_color: $grey4
+$thead_border: $grey9
+$table_border_std: $grey9
+$tfoot_border: $grey9
+$thead_link_normal: $blue
+$thead_link_hover: $table_primary_color
+$zebra_odd: $white
+$zebra_even: $greyE
+$thead_bg: $greyE
+$tfoot_bg: $greyE
 
-
+// imports
 @import general/normalize
 @import general/mixins
 @import general/base
 @import general/typography
+@import general/tables
 @import general/layout
 

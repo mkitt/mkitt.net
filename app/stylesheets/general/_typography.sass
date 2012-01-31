@@ -1,5 +1,9 @@
 
 // Typography
+abbr[title], acronym[title], dfn[title]
+  border-bottom: 1px dotted
+  font-style: italic
+
 b, strong
   font-style: bold
 
@@ -8,24 +12,46 @@ i, em
 
 pre, code, kbd, samp
   font-family: $code_norm
-  _font-family: "courier new", monospace
-  font-size: .85em
+  _font-family: $code_norm
 
-// todo: abstract colors
 code, kbd, samp
-  padding: 0 .2em
-  border: 1px solid #dedede
-  background: #f8f8ff
+  background: $code_bg
+  border: 1px solid $code_border
+  font-size: 85%
+  padding: 0 .3em
 
-// todo: abstract colors
 pre
+  +font-sizes(16)
   white-space: pre
   white-space: pre-wrap
   word-wrap: break-word
+  background: $pre_bg
+  border: 1px solid $pre_border
   margin: 1em 0
-  background-color: #eee
-  border: 1px solid #ddd
-  padding: 5px
+  padding: .75em
+
+pre code
+  padding: 0
+  border: 0
+  background: transparent
+
+blockquote
+  margin: 1em
+  padding: 0 10%
+
+blockquote p, blockquote q
+  +font-sizes(16)
+  font-style: italic
+  font-family: $serif_norm
+
+mark
+  background: $yellow
+
+big
+  font-size: 115%
+
+small, cite, figure figcaption
+  font-size: 85%
 
 sub, sup
   font-size: 75%
@@ -41,33 +67,44 @@ sub
 
 address
   font-style: normal
+  margin: 1em 0
 
 // Base Text
 h1, h2, h3, h4, h5, h6
   color: $header_color
+  padding-bottom: to_em(2)
+  line-height: 1
 
 h1
-  font-size: to_em(34)
-h2
-  font-size: to_em(26)
-  border-bottom: 1px solid $grey9
-  margin: 16px 0 8px
-h3
-  font-size: to_em(20)
-h4
-  font-size: to_em(18)
-h5
-  font-size: to_em(18)
-h6
-  font-size: to_em(18)
+  +font-sizes(16)
 
-p
+h2
+  +font-sizes(30)
+  margin: 1em 0 .5em
+  border-bottom: 1px solid $border_color
+
+h3
+  +font-sizes(24)
+  margin: .75em 0 .25em
+
+h4
+  +font-sizes(20)
+  margin: .75em 0 .25em
+
+h5
+  +font-sizes(18)
+
+h6
+  +font-sizes(18)
+  font-style: italic
+
+p, li
+  +font-sizes(14)
   font-style: normal
-  font-size: to_em(14)
 
 // Ordered and Unordered Lists
 ul
-  list-style: disc inside
+  list-style: square inside
 
 ol
   list-style: decimal-leading-zero inside
@@ -86,4 +123,17 @@ nav ul, nav ol
   margin-left: 0
   ul li, ol li, li
     margin-left: 0
+
+// Definition Lists
+
+dl dt
+  +font-sizes(12)
+  font-weight: bold
+  text-transform: uppercase
+  margin-top: to_em(12)
+  &:after
+    content: ":"
+
+dl dd
+  +font-sizes(14)
 

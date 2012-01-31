@@ -1,37 +1,56 @@
 
 // Primary container used everywhere
 .container
-  margin: 0 auto 0
+  max-width: $base_width * 1px
+  margin: 25px auto
+  padding: 0 1em
 
-// index.html
-.content
-  h1 > img
-    display: block
-    margin: 75px auto 0
-    max-width: 100%
-
-.utility
-  margin-top: 50px
-  text-align: center
-
+// Shared navigation containers
+.home-nav, .nav
   ul li
     display: inline
     margin-right: 1em
     &:last-child
       margin-right: 0
 
-  ul li h2
+  ul li h2, ul li h4
     display: inline
-    font-size: 1.5em
-    border: 0
     margin: 0
+    padding: 0
+    border: 0
 
-.footer
+// markdown type pages "main"
+.nav
+  margin-bottom: 20px
+  padding-bottom: 10px
+  border-bottom: 1px dotted $border_color
+  img
+    +border-radius(4)
+
+
+// index.html "home"
+.home .content
+  h1 > img
+    display: block
+    margin: 50px auto 0
+    max-width: 100%
+
+.home .nav
+  display: none
+
+.home-nav
+  margin-top: 50px
+  text-align: center
+
+.home-footer
   margin: 25px 0
   h3
     color: #f1f1f1
     text-align: center
     font-size: 1.5em
+    margin: 0
+    padding: 0
+    border: 0
     &:before, &:after
       content: "."
 

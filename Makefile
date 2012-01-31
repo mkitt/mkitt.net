@@ -8,17 +8,25 @@ application.css: $(SASS)
 	@sass $< > stylesheets/$@
 
 index.html:
-	@rm $@
+	@rm -f $@
+	@cat $(HEAD) app/templates/$@ $(TAIL) > $@.new
+	@sed 's/class="main"/class="home"/' $@.new > $@
+	@rm -f $@.new
+
+elements.html:
+	@cat app/templates/elements.md | marked > app/templates/$@
 	@cat $(HEAD) app/templates/$@ $(TAIL) > $@
+	@rm -f app/templates/$@
 
 resume:
 	@cat resume/resume.md | marked > resume/resume.html
 	@cat $(HEAD) resume/resume.html $(TAIL) > resume/index.html
-	@rm resume/resume.html
+	@rm -f resume/resume.html
 
 clean:
-	@rm -f stylesheets/application.css
-	@rm index.html
+	@rm -f elements.html
 
-.PHONY: index.html application.css resume clean
+publish: clean application.css index.html resume
+
+.PHONY: index.html application.css resume elements.html clean publish
 
