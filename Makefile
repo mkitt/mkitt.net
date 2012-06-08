@@ -14,12 +14,12 @@ index.html:
 	@rm -f $@.new
 
 elements.html:
-	@cat app/templates/elements.md | marked > app/templates/$@
+	@cat app/templates/elements.md | redcarpet > app/templates/$@ --smarty
 	@cat $(HEAD) app/templates/$@ $(TAIL) > $@
 	@rm -f app/templates/$@
 
 resume:
-	@cat resume/resume.md | marked > resume/resume.html
+	@cat resume/resume.md | redcarpet > resume/resume.html --smarty
 	@cat $(HEAD) resume/resume.html $(TAIL) > resume/index.html
 	@rm -f resume/resume.html
 
