@@ -3,37 +3,31 @@
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-<br/>
 
 ## Got sections? Try using h2 headings
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-<br/>
 
 ### Good things come in threes, like tacos and h3 headings
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-<br/>
 
 #### There's nothing clever to say about h4 headings
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-<br/>
 
 ##### Every time you use an h5 heading, Google kills a puppy. A tiny little puppy.
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-<br/>
 
 ###### Really an h6 heading? Google just killed a kitten now too.
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-<br/>
 
 ----
 
@@ -108,8 +102,6 @@ git push
   2. another ul ol li
 - Utica Club
 
-<br/>
-
 **An ordered list:**
 
 1. Wake up
@@ -122,7 +114,6 @@ git push
     2. another ol ol li
 5. Crack a beer
 
-<br/>
 
 **A definition list (standard markup):**
 
@@ -138,8 +129,6 @@ git push
 ----
 ![alt text](http://placehold.it/350x150 "Title")
 
-
-<br/>
 
 ----
 
@@ -172,4 +161,51 @@ git push
     <td>row 3, cell 3</td>
   </tr>
 </table>
+
+
+----
+
+http://www.google.com
+
+:hardwrap
+line 1
+line 2
+
+:autolink
+http://www.google.com/
+
+:tables
+
+aaa  | bbbb
+-----|------
+hello|sailor
+
+:strikethrough
+
+this is ~~striked text~~
+
+:fenced_code
+
+```ruby
+fenced code with backticks
+require 'redcarpet'
+markdown = Redcarpet.new("Hello World!")
+puts markdown.to_html
+```
+
+~~~
+fenced code with squigglies
+require 'redcarpet'
+markdown = Redcarpet.new("Hello World!")
+puts markdown.to_html
+~~~
+
+:lax_htmlblock
+this is <a href="#">native link tag of html</a> in a paragraph
+
+:no intraemphasis
+foo_bar_baz
+
+:space_header
+#no space after the pound symbol means no header
 
