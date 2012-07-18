@@ -62,10 +62,10 @@ a:hover, a:active {
   text-decoration: none; }
 
 a:hover {
-  color: #444444; }
+  color: #666666; }
 
 a:active {
-  color: #444444; }
+  color: #666666; }
 
 a:link {
   -webkit-tap-highlight-color: #268bd2; }
@@ -315,16 +315,21 @@ table.tfoot-decorate tfoot {
   margin: 25px auto;
   padding: 0 1em; }
 
-.home-nav ul li, .nav ul li {
-  display: inline;
-  margin-right: 1em; }
-  .home-nav ul li:last-child, .nav ul li:last-child {
-    margin-right: 0; }
-.home-nav ul li h2, .home-nav ul li h4, .nav ul li h2, .nav ul li h4 {
+.home-nav ul li,
+.nav ul li {
+  display: inline; }
+.home-nav ul li h2,
+.home-nav ul li h4,
+.nav ul li h2,
+.nav ul li h4 {
   display: inline;
   margin: 0;
   padding: 0;
-  border: 0; }
+  border: 0;
+  font-weight: normal; }
+.home-nav .simple,
+.nav .simple {
+  color: #999999; }
 
 .nav {
   margin-bottom: 20px;
@@ -336,7 +341,8 @@ table.tfoot-decorate tfoot {
     border-radius: 4;
     -moz-background-clip: padding;
     -webkit-background-clip: padding-box;
-    background-clip: padding-box; }
+    background-clip: padding-box;
+    margin-right: 1em; }
 
 .home .content h1 > img {
   display: block;
@@ -349,15 +355,3 @@ table.tfoot-decorate tfoot {
 .home-nav {
   margin-top: 50px;
   text-align: center; }
-
-.home-footer {
-  margin: 25px 0; }
-  .home-footer h3 {
-    color: #f1f1f1;
-    text-align: center;
-    font-size: 1.5em;
-    margin: 0;
-    padding: 0;
-    border: 0; }
-    .home-footer h3:before, .home-footer h3:after {
-      content: "."; }
