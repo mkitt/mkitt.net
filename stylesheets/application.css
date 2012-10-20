@@ -90,7 +90,7 @@ pre, code, kbd, samp {
   _font-family: "Bitstream Vera Sans Mono", "Menslo LG M", "Menlo", "Monaco", monospace; }
 
 code, kbd, samp {
-  background: #f8f8ff;
+  background: ghostwhite;
   border: 1px solid #dedede;
   font-size: 85%;
   padding: 0 0.3em; }
@@ -101,7 +101,7 @@ pre {
   white-space: pre;
   white-space: pre-wrap;
   word-wrap: break-word;
-  background: #f8f8ff;
+  background: ghostwhite;
   border: 1px solid #dedede;
   margin: 1em 0;
   padding: 0.75em; }
@@ -225,7 +225,7 @@ table {
   width: 100%; }
   table thead, table tfoot {
     font-size: 11px;
-    font-size: 0.688rem;
+    font-size: 0.6875rem;
     color: #444444;
     font-weight: bold; }
   table caption {
@@ -233,7 +233,7 @@ table {
     font-size: 0.75rem;
     color: #444444;
     font-weight: bold;
-    margin-bottom: 0.313em;
+    margin-bottom: 0.3125em;
     text-align: left;
     text-transform: uppercase; }
   table thead {
@@ -260,7 +260,7 @@ table {
     table tbody tr:last-child {
       border-bottom: 1px solid #999999; }
   table tfoot tr, table tfoot td {
-    padding: 0.313em 0.625em; }
+    padding: 0.3125em 0.625em; }
   table tfoot tr {
     border-bottom: 1px solid #999999; }
 

@@ -3,7 +3,7 @@
 
 ## Qualifications
 
-Over twelve years experience architecting, developing interfaces for award winning rich internet, campaign, and web applications. Originally started out as an interaction designer, but quickly migrated into the developer role reconstructing graphical user interfaces. Fluent in a multitude of programming technologies and methodologies. Obsessed with pixel level precision and optimized executions.
+Over fourteen years experience architecting, developing interfaces for award winning rich internet, campaign, and web applications. Originally started out as an interaction designer, but quickly migrated into the developer role reconstructing graphical user interfaces. Fluent in a multitude of programming technologies and methodologies. Obsessed with pixel level precision and optimized executions.
 
 ## Objective
 
@@ -66,7 +66,7 @@ Go Tigers!
 
 ## Recognition
 
-Communication Arts magazine, The One Show Interactive, Art Director’s Club of Denver, Denver Ad Federation, Macromedia Site of the Day
+Communication Arts magazine, The One Show Interactive, Art Director’s Club of Denver, Denver Ad Federation, Macromedia Site of the Day, FWA Mobile Site of the Day
 
 ## Contact
 
