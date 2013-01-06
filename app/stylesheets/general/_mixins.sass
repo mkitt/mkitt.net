@@ -1,25 +1,56 @@
+$experimental-support-for-mozilla: true !default
 
-// Converts target `px` value to `em` in context constraints
-@function to_em($target_px, $context: $base_px)
-  @return ($target_px / $context) * 1em
+@function to_em($target-px, $context:$base-font-size)
+  @return ($target-px / $context) * 1em
 
-// Converts target `px` value to `rem` in context constraints
-@function to_rem($target_px, $context: $base_px)
-  @return ($target_px / $context) * 1rem
+@function to_rem($target-px, $context:$context-px)
+  @return ($target-px / $context) * 1rem
 
-// Converts target `px` value to `percentage` in context constraints
-@function to_percent($target_px, $context: $base_width)
-  @return percentage($target_px / $context)
+@function to_percent($target-px, $context:$base-width)
+  @return percentage($target-px / $context)
 
-@mixin font-sizes($target_px, $context:$base_px)
-  font-size: $target_px * 1px
-  font-size: to_rem($target_px, $context)
+@function vertical_pixel($target-px)
+  @return ($base-vertical / $target-px) * 1px
 
-@mixin border-radius($radii:0)
-  -webkit-border-radius: $radii
-  -moz-border-radius: $radii
-  border-radius: $radii
-  -moz-background-clip: padding
-  -webkit-background-clip: padding-box
-  background-clip: padding-box
+@function vertical_em($target-px)
+  @return to_em(($base-vertical / $target-px), $base-font-size)
+
+@function vertical_percent($target-px)
+  @return to_percent(($base-vertical / $target-px), $base-font-size)
+
+
+
+@mixin font-size($target-px, $context:$context-px)
+  font-size: $target-px * 1px
+  font-size: to_rem($target-px, $context)
+
+@mixin clearfixer
+  &:before, &:after
+    content: " "
+    display: table
+  &:after
+    clear: both
+
+@mixin box-sizing ($type:border-box)
+  $box: unquote($type)
+  -webkit-box-sizing: $box
+  @if $experimental-support-for-mozilla == true
+    -moz-box-sizing: $box
+  box-sizing: $box
+
+@mixin text-selection($bg:#0091ce, $fg:#fff)
+  \::-moz-selection
+    background: $bg
+    color: $fg
+    text-shadow: none
+
+  \::selection
+    background: $bg
+    color: $fg
+    text-shadow: none
+
+@mixin tab-focus
+  outline: thin dotted
+  outline: 5px auto -webkit-focus-ring-color
+  outline-offset: -2px
 

@@ -1,9 +1,10 @@
-
 // Primary container used everywhere
 .container
-  max-width: $base_width * 1px
+  +box-sizing(border-box)
+  +clearfixer
+  max-width: $base-width * 1px
   margin: 25px auto
-  padding: 0 1em
+  padding: 0 1%
 
 // Shared navigation containers
 .home-nav,
@@ -11,32 +12,33 @@
   ul li
     display: inline
 
-  ul li h2,
-  ul li h4
+  h2,
+  h4
     display: inline
     margin: 0
     padding: 0
     border: 0
     font-weight: normal
-  .simple
-    color: $grey9
+
+.simple
+  color: #666
 
 // markdown type pages "main"
 .nav
   margin-bottom: 20px
   padding-bottom: 10px
-  border-bottom: 1px dotted $border_color
-  img
-    +border-radius(4)
-    margin-right: 1em
+  border-bottom: 1px dotted #444
+
+.nav img
+  border-radius: 4
+  margin-right: 1em
 
 
 // index.html "home"
-.home .content
-  h1 > img
-    display: block
-    margin: 50px auto 0
-    max-width: 100%
+.home .content h1 > img
+  display: block
+  margin: 50px auto 0
+  max-width: 100%
 
 .home .nav
   display: none
@@ -44,16 +46,4 @@
 .home-nav
   margin-top: 50px
   text-align: center
-
-// .home-footer
-  // margin: 25px 0
-  // h3
-    // color: #f1f1f1
-    // text-align: center
-    // font-size: 1.5em
-    // margin: 0
-    // padding: 0
-    // border: 0
-    // &:before, &:after
-      // content: "."
 

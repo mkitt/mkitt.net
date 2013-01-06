@@ -1,56 +1,65 @@
+$heading-color: $body-color !default
+$heading-family: $sans-family !default
+$heading-font-weight: bold !default
+$heading-line-height: $base-line-height !default
+$h1-size: $base-font-size + 16 !default
+$h2-size: $base-font-size + 10 !default
+$h3-size: $base-font-size + 4 !default
+$h4-size: $base-font-size + 2 !default
+$h5-size: $base-font-size + 1 !default
+$h6-size: $base-font-size !default
 
-// Typography
-abbr[title], acronym[title], dfn[title]
-  border-bottom: 1px dotted
-  font-style: italic
+$hr-border: $base-border !default
+$mark-bgc: $yellow !default
+$mark-color: #333 !default
 
-b, strong
-  font-style: bold
+$code-bgc: $focus-bgc !default
+$code-border: $base-border !default
+$code-color-inline: $body-color !default
+$pre-radii: $radii !default
 
-i, em
-  font-style: italic
+$blockquote-family: $serif-family !default
 
-pre, code, kbd, samp
-  font-family: $code_norm
-  _font-family: $code_norm
+// Heading elements
+// -----------------------------------------------------------------------------
+h1, h2, h3, h4, h5, h6
+  color: $heading-color
+  font-family: $heading-family
+  font-weight: $heading-font-weight
+  line-height: $heading-line-height
+  padding-bottom: 0.125em
+  margin: 0
 
-code, kbd, samp
-  background: $code_bg
-  border: 1px solid $code_border
-  font-size: 85%
-  padding: 0 .3em
+h1
+  +font-size($h1-size)
 
-pre
-  +font-sizes(16)
-  white-space: pre
-  white-space: pre-wrap
-  word-wrap: break-word
-  background: $pre_bg
-  border: 1px solid $pre_border
+h2
+  +font-size($h2-size)
+  border-bottom: 1px solid #444
+  margin: 1em 0 0.5em
+
+h3
+  +font-size($h3-size)
+
+h4
+  +font-size($h4-size)
+
+h5
+  +font-size($h5-size)
+
+h6
+  +font-size($h6-size)
+
+
+// Inline paragraph elements
+// -----------------------------------------------------------------------------
+p
   margin: 1em 0
-  padding: .75em
 
-pre code
-  padding: 0
-  border: 0
-  background: transparent
+strong
+  font-weight: bold
 
-blockquote
-  margin: 1em
-  padding: 0 10%
-
-blockquote p, blockquote q
-  +font-sizes(16)
-  font-style: italic
-  font-family: $serif_norm
-
-mark
-  background: $yellow
-
-big
-  font-size: 115%
-
-small, cite, figure figcaption
+small
   font-size: 85%
 
 sub, sup
@@ -67,73 +76,118 @@ sub
 
 address
   font-style: normal
+
+abbr[title],
+dfn[title]
+  border-bottom: 1px dotted
+  font-size: 90%
+  font-style: normal
+  cursor: help
+
+mark
+  background: $mark-bgc
+  color: $mark-color
+  padding: 0 0.3em
+
+
+// Rules
+// -----------------------------------------------------------------------------
+hr
+  display: block
+  height: 1px
+  border: 0
+  border-top: 1px solid $hr-border
   margin: 1em 0
+  padding: 0
+hr.dotted
+  border-top-style: dotted
+hr.dashed
+  border-top-style: dashed
 
-// Base Text
-h1, h2, h3, h4, h5, h6
-  color: $header_color
-  padding-bottom: to_em(2)
-  line-height: 1
 
-h1
-  +font-sizes(16)
+// Code inline and block elements
+// -----------------------------------------------------------------------------
+pre, code, kbd, samp
+  background-color: $code-bgc
+  border: 1px solid $code-border
+  font-family: $mono-family
+  font-size: 85%
 
-h2
-  +font-sizes(30)
-  margin: 1em 0 .5em
-  border-bottom: 1px solid $border_color
+code, kbd, samp
+  padding: 0.1em 0.3em
 
-h3
-  +font-sizes(24)
-  margin: .75em 0 .25em
+code
+  color: $code-color-inline
 
-h4
-  +font-sizes(20)
-  margin: .75em 0 .25em
+pre
+  border-radius: $pre-radii
+  margin: 1em 0
+  padding: 0.8em
+  white-space: pre
+  white-space: pre-wrap
+  word-wrap: break-word
+  overflow: hidden
 
-h5
-  +font-sizes(18)
+pre code
+  color: $body-color
+  background: transparent
+  border: 0
+  font-size: 100%
+  padding: 0
 
-h6
-  +font-sizes(18)
+
+// Blockquotes
+// -----------------------------------------------------------------------------
+blockquote
+  font-family: $blockquote-family
+  margin: 1em 0
+  padding-right: 10%
+
+blockquote p
+  +font-size($base-font-size)
   font-style: italic
 
-p, li
-  +font-sizes(14)
+blockquote small
+  display: block
+  margin-top: 0.75em
+  &:before
+    content: '\2014 \00A0'
+
+blockquote cite
+  border-bottom: 1px dotted
+  cursor: help
   font-style: normal
 
+q:before, q:after,
+blockquote:before,
+blockquote:after
+  content: ""
+
+
 // Ordered and Unordered Lists
-ul
-  list-style: square inside
+// -----------------------------------------------------------------------------
 
-ol
-  list-style: decimal-leading-zero inside
+ol, ul, dl, menu, dd
+  margin: 0
+  padding: 0
 
-ul li, ol li
-  margin-left: 0.75em
+ul, ol
+  margin-left: 1.65em
+  list-style-type: square
 
-ul ul li, ul ol li,
-ol ul li, ol ol li
-  margin-left: 1.75em
-
-// Navigation Lists
-nav ul, nav ol
-  list-style-image: none
-  list-style-type: none
+nav ul,
+nav ol,
+.unstyled-list
   margin-left: 0
-  ul li, ol li, li
-    margin-left: 0
+  list-style: none
+  list-style-image: none
 
 // Definition Lists
-
-dl dt
-  +font-sizes(12)
+dt
   font-weight: bold
-  text-transform: uppercase
-  margin-top: to_em(12)
+  margin-top: 0.5em
   &:after
     content: ":"
-
-dl dd
-  +font-sizes(14)
+dd
+  font-weight: normal
 

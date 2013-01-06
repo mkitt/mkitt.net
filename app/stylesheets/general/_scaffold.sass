@@ -1,0 +1,53 @@
+$body-family: $sans-family !default
+$body-background: $base-bgc !default
+$body-color: $base-color !default
+$select-color: white !default
+$select-bgc: $primary !default
+$tap-highlight: $link-color !default
+
+// Top level elements
+html
+  font-size: 100%
+  -webkit-text-size-adjust: 100%
+  -ms-text-size-adjust: 100%
+
+html, button, input, select, textarea
+  color: $body-color
+  font-family: $body-family
+
+body
+  +font-size($base-font-size)
+  background: $body-background
+  line-height: $base-line-height
+  margin: 0
+
+// Set vendor text selection
++text-selection($select-bgc, $select-color)
+
+a
+  -webkit-transition: color 0.25s
+  -moz-transition: color 0.25s
+  -ms-transition: color 0.25s
+  transition: color 0.25s
+
+// Links
+a, a:visited
+  color: $link-color
+  text-decoration: none
+
+a:focus
+  +tab-focus
+
+a:hover, a:active
+  outline: 0
+  text-decoration: none
+
+a:hover
+  color: $link-hover
+
+a:active, a.active, .active > a
+  color: $link-active
+
+a:link
+  -webkit-tap-highlight-color: $tap-highlight
+

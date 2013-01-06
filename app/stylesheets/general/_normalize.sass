@@ -1,21 +1,95 @@
+// Based on [normalize.css](https://github.com/necolas/normalize.css/)
 
-// HTML 5 Definitions and Normalization
 article, aside, details, figcaption, figure,
-footer, header, hgroup, nav, menu, section
+footer, header, hgroup, nav, section, summary
   display: block
 
-// Reset Margin and Padding
-html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend, embed, a:hover, a:active, a:focus,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section, summary,
-time, mark, audio, video
+audio, canvas, video
+  display: inline-block
+
+audio:not([controls])
+  display: none
+  height: 0
+
+[hidden]
+  display: none
+
+// --------------------------------------------------------------------
+// All scaffold normalization is found in _scaffold.sass
+// All typography normalization is found in _typography.sass
+// --------------------------------------------------------------------
+
+img
+  border: 0
+  max-width: 100%
+  height: auto
+  vertical-align: middle
+
+svg:not(:root)
+  overflow: hidden
+
+figure
+  margin: 0
+
+form
+  margin: 0
+
+fieldset,
+legend
+  border: 0
   margin: 0
   padding: 0
+
+legend
+  white-space: normal
+
+button, input, select, textarea
+  font-family: inherit
+  font-size: 100%
+  margin: 0
+  vertical-align: baseline
+
+button, input
+  line-height: normal
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"]
+  -webkit-appearance: button
+  cursor: pointer
+
+button[disabled],
+input[disabled],
+a.disabled,
+li.disabled > a
+  cursor: default
+
+input[type="checkbox"],
+input[type="radio"]
+  +box-sizing(border-box)
+  padding: 0
+
+input[type="search"]
+  +box-sizing(content-box)
+  -webkit-appearance: textfield
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button
+  -webkit-appearance: none
+
+button::-moz-focus-inner,
+input::-moz-focus-inner
   border: 0
+  padding: 0
+
+textarea
+  overflow: auto
+  vertical-align: top
+  resize: vertical
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+  max-width: 100%
 
