@@ -1,4 +1,4 @@
-# Resume
+# Matthew Kitt
 
 ## Qualifications
 
@@ -43,7 +43,7 @@ For the latest open source projects, please checkout:
 
 ### Mode Set
 
-##### Director / Developer, 2011 – Present
+#### Director / Developer, 2011 – Present
 
 A software consultancy specializing in web and mobile application
 development. Mode Set was created by four developers with a drive to
@@ -53,7 +53,7 @@ development, business development and operations.
 
 ### Factory Design Labs
 
-##### Group UI Development Director, 2005 – 2011
+#### Group UI Development Director, 2005 – 2011
 
 Responsible for strategic architecture, development on marketing and
 application driven solutions. Communicate design decisions directly to
@@ -66,7 +66,7 @@ level code. Research and development.
 
 ### The Firm Graphics
 
-##### UI Developer/Interaction Designer, 2001 – 2005
+#### UI Developer/Interaction Designer, 2001 – 2005
 
 Developed, designed, and animated interactive applications for
 broadcast, web and print mediums. Established technical processes,
@@ -75,7 +75,7 @@ frameworks, and toolkits for rapid interface development.
 
 ## Education
 
-##### Rochester Institute of Technology
+### Rochester Institute of Technology
 
 BFA, Interactive Media and Technology, Graphic Design. Go Tigers!
 
@@ -86,9 +86,6 @@ Club of Denver, Denver Ad Federation, Macromedia Site of the Day, FWA
 Mobile Site of the Day
 
 ## Contact
-
-Please contact [Matthew Kitt](/) via
-[LinkedIn](http://www.linkedin.com/pub/matthew-kitt/4/9b1/934)
 
 For new business inquiries please contact us at [Mode
 Set](mailto:info@modeset.com)

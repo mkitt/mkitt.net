@@ -1,58 +1,47 @@
+<!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>mkitt</title>
+    <meta name="description" content="Online identity for Matthew Kitt">
+    <meta name="author" content="Matthew Kitt">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, minimal-ui'>
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="white-translucent">
+    <style media="all">
+      *, *:before, *:after { box-sizing: border-box; }
+      html, body, [role="main"] { height: 100%; }
+      body { margin: 0; }
+      a { display: inline-block; }
+      [title="modeset.com"],
+      [title="ello.co"] {
+        -webkit-transition: -webkit-transform 250ms ease;
+        transition: transform 250ms ease;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -2.5rem; }
+      [title="modeset.com"] {
+        -webkit-transform: translateX(-5rem);
+                transform: translateX(-5rem); }
+      @media(min-width: 45em) {
+        [title="modeset.com"] {
+          -webkit-transform: translateX(-6.25rem);
+                  transform: translateX(-6.25rem); }
+        [title="ello.co"] {
+          -webkit-transform: translateX(1.25rem);
+                  transform: translateX(1.25rem); }
+      }
+    </style>
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>mkitt</title>
-  <meta name="description" content="Online identity for Matthew Kitt">
-  <meta name="author" content="Matthew Kitt">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="imagetoolbar" content="no">
-  <meta name="apple-touch-fullscreen" content="YES">
-  <meta name="apple-mobile-web-app-capable" content="YES">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <link rel="stylesheet" href="/stylesheets/application.css" type="text/css">
-</head>
-
-<body lang="en" class="home">
-  <div class="container">
-    <nav class="nav">
-      <ul>
-        <li><a href="/"><img src="/images/mkitt.png" alt="mkitt"/></a></li>
-        <li><h4><a href="http://modeset.com/">mode set</a></h4></li>
-        <li><h4 class="simple">/</h4></li>
-        <li><h4><a href="http://github.com/mkitt">github</a></h4></li>
-      </ul>
-    </nav>
-
-    <section class="content">
-      <h1><img src="images/modeset-mkitt.png" alt="modeset" /></h1>
-    </section>
-
-    <nav class="home-nav">
-      <ul>
-        <li><h2><a href="http://modeset.com/">mode set</a></h2></li>
-        <li><h2 class="simple">/</h2></li>
-        <li><h2><a href="http://github.com/mkitt">github</a></h2></li>
-      </ul>
-    </nav>
-
-  </section>
-  <script type="text/javascript">
-
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-33175793-1']);
-    _gaq.push(['_setDomainName', 'mkitt.net']);
-    _gaq.push(['_trackPageview']);
-
-    (function() {
-     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-     })();
-
-  </script>
-</body>
-
+  <body>
+    <div role="main">
+      <a href="http://modeset.com/" title="modeset.com"><svg role="img" width="80" height="80" viewBox="0 0 80 80"><path role="presentation" d="M54.9 16.7v9.7l-2.6 2.6v-5.6l-6.6 6.3-11.8-17.3v17.2l-12.4-18v14.8l-3.5 4v19.8l5.6 8.3v-9.4l12.6 18.3v-13.2l3.3-4.2v20l12.8-12.2v-10.1l2.6-2.4v5.5l7.1-6.5v-34.3z"/></svg></a>
+      <a href="http://ello.co/" title="ello.co"><svg role="img" width="80" height="80" viewBox="0 0 80 80"><circle role="presentation" cx="40" cy="40" r="30"/><path role="presentation" fill="#fff" d="M40 58c-8.2 0-15.4-5.6-17.4-13.5-.2-.9.3-1.9 1.2-2.1.9-.2 1.9.3 2.1 1.2 1.7 6.4 7.5 10.9 14.1 10.9s12.4-4.5 14.1-10.9c.2-.9 1.2-1.5 2.1-1.2.9.2 1.5 1.2 1.2 2.1-2 7.9-9.2 13.5-17.4 13.5z"/></svg></a>
+    </div>
+  </body>
 </html>
 
