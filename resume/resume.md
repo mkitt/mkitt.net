@@ -1,4 +1,4 @@
-# Matthew Kitt
+# [Matthew Kitt](http://mkitt.net/ "mkitt.net")
 
 ## Qualifications
 
