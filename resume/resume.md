@@ -2,7 +2,7 @@
 
 ## Qualifications
 
-Over fourteen years experience engineering award winning, large scale
+Over fifteen years experience engineering award winning, large scale
 web and mobile applications for global brands. Fluent in a multitude of
 programming languages, methodologies and architectures. Able to provide
 unique insight translating user experience, creative executions and
@@ -20,7 +20,7 @@ understanding.
 
 ## Expertise
 
-- Bash, C/C++, CSS/Sass, JavaScript/CoffeeScript, Java, Objective C, Ruby, Vim Script
+- C/C++, CSS/Sass, JavaScript/CoffeeScript, Java, Objective C, Ruby, Shell, Vim Script
 - Object Oriented Design, Functional Programming, Test Driven Development, Accessibility
 - Interaction/Technical Architecture and Diagramming
 - Mac/Unix
@@ -43,8 +43,7 @@ focus on quality and creativity. Responsible for leading user interface
 development, business development and operations.
 [modeset.com](http://modeset.com/ "modeset.com")
 
-Clients: Ello, Google, Qdoba, Cirrus MD, Inspirato, Coraline, Pinnacol,
-Spring Mobile Solutions
+Clients: Ello, Google, Qdoba, Cirrus MD, Inspirato, Coraline, Pinnacol
 
 ### Ello
 #### Frontend Lead / Co-Founder, 2013 – Present
