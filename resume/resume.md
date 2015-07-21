@@ -12,8 +12,8 @@ interactions through innovative, optimized, interface development.
 ## Objective
 
 To develop engaging, innovative applications for early-stage
-organizations.  Helping clients grow a product from ideas to a
-sustainable business.  Continued knowledge growth, education and
+organizations. Helping clients grow a product from ideas to a
+sustainable business. Continued knowledge growth, education and
 experimentation around all forms of programming practices and language
 understanding. 
 
@@ -34,6 +34,16 @@ understanding.
 
 ## Experience
 
+### Ello
+#### Frontend Lead / Co-Founder, 2013 – Present
+
+Beautiful & ad-free. [ello.co](http://ello.co/ "ello.co")
+
+A project with [Mode Set](http://modeset.com/ "modeset.com"), [Paul
+Budnitz](http://paulbudnitz.com/ "paulbudnitz.com") and [Berger
+Föhr](http://bergerfohr.com/ "bergerfohr.com").
+
+
 ### Mode Set
 #### Director / Developer, 2011 – Present
 
@@ -44,16 +54,6 @@ development, business development and operations.
 [modeset.com](http://modeset.com/ "modeset.com")
 
 Clients: Ello, Google, Qdoba, Cirrus MD, Inspirato, Coraline, Pinnacol
-
-### Ello
-#### Frontend Lead / Co-Founder, 2013 – Present
-
-Simple, beautiful & ad-free. [ello.co](http://ello.co/ "ello.co")
-
-A project with [Mode Set](http://modeset.com/ "modeset.com"), [Paul
-Budnitz](http://paulbudnitz.com/ "paulbudnitz.com") and [Berger
-Föhr](http://bergerfohr.com/ "bergerfohr.com").
-
 
 ### Factory Design Labs
 #### Group UI Development Director, 2005 – 2011
