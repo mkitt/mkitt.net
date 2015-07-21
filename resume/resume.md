@@ -20,7 +20,7 @@ understanding.
 
 ## Expertise
 
-- C/C++, CSS/Sass, JavaScript/CoffeeScript, Java, Objective C, Ruby, Shell, Vim Script
+- C/C++, CSS/Sass, JavaScript/CoffeeScript, Java, Objective C, Ruby, Shell, Swift, Vim Script
 - Object Oriented Design, Functional Programming, Test Driven Development, Accessibility
 - Interaction/Technical Architecture and Diagramming
 - Mac/Unix
@@ -29,6 +29,7 @@ understanding.
 ## Open Source
 
 - [github/mkitt](https://github.com/mkitt/) 
+- [github/ello](https://github.com/ello/)
 - [github/modeset](https://github.com/modeset/)
 
 
@@ -96,11 +97,4 @@ Interactive Media and Technology, Graphic Design. Go Tigers!
 Communication Arts magazine, The One Show Interactive, Art Director’s
 Club of Denver, Denver Ad Federation, Macromedia Site of the Day, FWA
 Mobile Site of the Day
-
-
-## Contact
-
-- For new business inquiries, please contact us at [Mode Set](mailto:info@modeset.com)
-- For any inquiries regarding [Ello](mailto:hello@ello.co)
-- For personal inquiries, please [contact me](mailto:mk@mkitt.net) directly
 
