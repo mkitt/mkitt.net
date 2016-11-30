@@ -4,7 +4,7 @@ import { style } from 'glamor'
 const mainStyles = style({
   display: 'flex',
   flexFlow: 'column wrap',
-  minHeight: '100vh',
+  minHeight: 'calc(100vh - 80px)',
 })
 
 const sectionStyles = style({
