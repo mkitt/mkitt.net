@@ -1,8 +1,8 @@
-
+// @flow
 // -------------------------------------
 // Base reset and setup
 
-export const baseStyles = `
+export const baseStyles: string = `
 *,
 *::before,
 *::after {
@@ -54,7 +54,7 @@ li a {
 // -------------------------------------
 // Markdown documents (resume)
 
-export const proseStyles = `
+export const proseStyles: string = `
 h1 {
   position: -webkit-sticky;
   position: sticky;

@@ -1,21 +1,27 @@
-import React, { PropTypes } from 'react'
+// @flow
+import React from 'react'
 import { style } from 'glamor'
+import type { JSS } from '../types/flowtypes'
 
-const mainStyles = style({
+const mainStyles: JSS = style({
   display: 'flex',
   flexFlow: 'column wrap',
   minHeight: 'calc(100vh - 80px)',
 })
 
-const sectionStyles = style({
+const sectionStyles: JSS = style({
   margin: 'auto',
 })
 
-const linkStyles = style({
-  marginRight: '0.5rem',
+const linkStyles: JSS = style({
+  marginRight: '0.75rem',
 })
 
-const Index = props =>
+type Props = {
+  links: Array<{label: string, url: number}>,
+}
+
+export default(props: Props) =>
   <main className={mainStyles} role="main">
     <section className={sectionStyles}>
       {props.links.map(link =>
@@ -23,10 +29,4 @@ const Index = props =>
       )}
     </section>
   </main>
-
-export default Index
-
-Index.propTypes = {
-  links: PropTypes.arrayOf(React.PropTypes.object),
-}
 

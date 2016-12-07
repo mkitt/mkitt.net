@@ -1,7 +1,9 @@
+// @flow
 import React from 'react'
 import { style } from 'glamor'
+import type { JSS } from '../types/flowtypes'
 
-const navStyles = style({
+const navStyles: JSS = style({
   position: 'fixed',
   top: 0,
   right: 0,
@@ -15,10 +17,8 @@ const navStyles = style({
   backgroundColor: '#fff',
 })
 
-const Navbar = () =>
+export default() =>
   <nav className={navStyles}>
     <a href="/">mkitt.net</a>
   </nav>
-
-export default Navbar
 

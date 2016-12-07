@@ -1,18 +1,24 @@
-import React, { PropTypes } from 'react'
+// @flow
+import React from 'react'
 import { insertRule, style } from 'glamor'
 import { proseStyles } from '../css'
+import type { JSS } from '../types/flowtypes'
 
 insertRule(proseStyles)
 
-const markdownStyles = style({
+const markdownStyles: JSS = style({
   position: 'relative',
   maxWidth: '45rem',
   padding: '3.125rem 1rem 1rem',
   margin: '0 auto',
 })
 
+type Props = {
+  content: string,
+}
+
 /* eslint-disable react/no-danger */
-const Resume = props =>
+export default(props: Props) =>
   <main role="main">
     <div
       className={markdownStyles}
@@ -20,10 +26,5 @@ const Resume = props =>
     />
   </main>
 
-Resume.propTypes = {
-  content: PropTypes.string,
-}
-
-export default Resume
 /* eslint-enable react/no-danger */
 

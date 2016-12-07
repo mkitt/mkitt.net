@@ -1,15 +1,14 @@
-import React, { PropTypes } from 'react'
+// @flow
+import React from 'react'
 import Navbar from './Navbar'
 
-const Body = props =>
+type Props = {
+  children: React.Element<*>,
+}
+
+export default(props: Props) =>
   <body>
     {props.children}
     <Navbar />
   </body>
-
-Body.propTypes = {
-  children: PropTypes.node,
-}
-
-export default Body
 
