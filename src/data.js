@@ -15,7 +15,6 @@ module.exports = {
     // { label: 'Projects', url: '/projects' },
     { label: 'GitHub', url: 'https://github.com/mkitt' },
     { label: 'Ello', url: 'https://ello.co/mk' },
-    { label: 'Résumé', url: '/resume' },
     { label: 'Email', url: 'mailto: mk@mkitt.net' },
   ],
   routes: [
