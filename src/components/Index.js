@@ -1,21 +1,28 @@
 // @flow
 import React from 'react'
-import { style } from 'glamor'
-import type { JSS } from '../types/flowtypes'
+import { compose, hover } from 'glamor'
+import {
+  alignItemsCenter,
+  colorBlue,
+  decorateNone,
+  flex,
+  justifyCenter,
+  transitionColor,
+} from '../styles/jso'
 
-const mainStyles: JSS = style({
-  display: 'flex',
-  flexFlow: 'column wrap',
-  minHeight: 'calc(100vh - 80px)',
-})
+const mainStyles = compose(
+  flex,
+  justifyCenter,
+  alignItemsCenter,
+  { minHeight: 'calc(100vh - 80px)' },
+)
 
-const sectionStyles: JSS = style({
-  margin: 'auto',
-})
-
-const linkStyles: JSS = style({
-  marginRight: '0.75rem',
-})
+const linkStyles = compose(
+  { marginRight: '0.75rem' },
+  decorateNone,
+  transitionColor,
+  hover(colorBlue),
+)
 
 type Props = {
   links: Array<{label: string, url: number}>,
@@ -23,7 +30,7 @@ type Props = {
 
 export default(props: Props) =>
   <main className={mainStyles} role="main">
-    <section className={sectionStyles}>
+    <section>
       {props.links.map(link =>
         <a className={linkStyles} href={link.url} key={`${link.label}_link`}>{link.label}</a>,
       )}

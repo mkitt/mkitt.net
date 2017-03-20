@@ -1,7 +1,7 @@
 // @flow
 import React from 'react'
 import { renderToStaticMarkup } from 'react-dom/server'
-import { renderStaticOptimized } from 'glamor/server'
+import { renderStaticOptimized } from 'glamor-server'
 import Root from './components/Root'
 import Index from './components/Index'
 import Resume from './components/Resume'

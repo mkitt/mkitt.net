@@ -1,10 +1,6 @@
 import React, { PropTypes } from 'react'
-import { insertRule } from 'glamor'
-import { baseStyles } from '../css'
 import Head from '../components/Head'
 import Body from '../components/Body'
-
-insertRule(baseStyles)
 
 const Root = props =>
   <html lang="en">
@@ -15,7 +11,7 @@ const Root = props =>
   </html>
 
 Root.propTypes = {
-  children: PropTypes.node,
+  children: PropTypes.node.isRequired,
 }
 
 export default Root

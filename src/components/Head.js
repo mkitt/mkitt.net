@@ -1,5 +1,6 @@
 // @flow
 import React from 'react'
+import { insertRule } from 'glamor'
 
 type Props = {
   avatar: string,
@@ -9,6 +10,43 @@ type Props = {
   title: string,
   url: string,
 }
+
+insertRule(`
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+  }
+  html {
+    font: normal 400 100% / 1.5 -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+  body {
+    position: relative;
+    margin: 0;
+    overflow-x: hidden;
+    color: #333;
+    background-color: #fff;
+  }
+  ::selection {
+    color: #fff;
+    text-shadow: none;
+    background: #000;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    line-height: 1.25;
+  }
+  a {
+    color: inherit;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+  }
+`.replace(/\n/g, ''))
 
 /* eslint-disable react/no-danger */
 export default (props: Props) =>
