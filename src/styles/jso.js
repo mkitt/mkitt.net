@@ -1,5 +1,6 @@
 import { compose } from 'glamor'
 
+export const absolute = { position: 'absolute' }
 export const fixed = { position: 'fixed' }
 export const relative = { position: 'relative' }
 export const sticky = { position: 'sticky' }
