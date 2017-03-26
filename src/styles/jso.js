@@ -1,4 +1,4 @@
-import { compose } from 'glamor'
+import { css } from './jss'
 
 export const absolute = { position: 'absolute' }
 export const fixed = { position: 'fixed' }
@@ -24,7 +24,7 @@ const proseLinks = {
   fontWeight: 500,
   borderBottom: '1px dotted',
 }
-export const proseStyles = compose({
+export const proseStyles = css({
   '& h1': {
     marginTop: '1rem',
     marginBottom: '2rem',

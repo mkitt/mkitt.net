@@ -1,6 +1,6 @@
 // @flow
 import React from 'react'
-import { compose, hover } from 'glamor'
+import { css, hover } from '../styles/jss'
 import {
   alignRight,
   bgcWhite,
@@ -12,7 +12,7 @@ import {
   zIndex1,
 } from '../styles/jso'
 
-const navStyles = compose(
+const navStyles = css(
   fixed,
   { top: 0, right: 0, left: 0 },
   zIndex1,
@@ -22,7 +22,7 @@ const navStyles = compose(
   bgcWhite,
 )
 
-const linkStyles = compose(
+const linkStyles = css(
   inlineBlock,
   { fontFamily: 'Menlo, Monaco, Lucida Console, Bitstream Vera Sans Mono, Courier New, monospace' },
   { fontSize: '0.8125rem' },

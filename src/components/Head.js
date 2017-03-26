@@ -23,7 +23,6 @@ insertRule(`
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
-    text-size-adjust: 100%;
   }
   body {
     position: relative;

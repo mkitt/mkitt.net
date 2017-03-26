@@ -1,6 +1,6 @@
 // @flow
 import React from 'react'
-import { compose, hover } from 'glamor'
+import { css, hover } from '../styles/jss'
 import {
   alignItemsCenter,
   colorBlue,
@@ -10,14 +10,14 @@ import {
   transitionColor,
 } from '../styles/jso'
 
-const mainStyles = compose(
+const mainStyles = css(
   flex,
   justifyCenter,
   alignItemsCenter,
   { minHeight: 'calc(100vh - 80px)' },
 )
 
-const linkStyles = compose(
+const linkStyles = css(
   { marginRight: '0.75rem' },
   decorateNone,
   transitionColor,
