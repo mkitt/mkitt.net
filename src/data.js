@@ -91,7 +91,7 @@ module.exports = {
       title: 'rokk3rfuel.com',
       url: 'https://rokk3rfuel.herokuapp.com/',
       repoUrl: 'https://github.com/mkitt/rokk3rfuel',
-      description: 'A brochure site for a new Miami/Denver based Venture Capital firm. The website is built on top of next.js and utlizing the glamor library to style the react based components.',
+      description: 'A brochure site for a new Miami/Denver based Venture Capital firm. The website is built on top of next.js and utlizing the glamor library to style react based components.',
     },
     {
       id: 'mkitt-toolkitt',
