@@ -4137,6 +4137,10 @@ to-fast-properties@^1.0.1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/to-fast-properties/-/to-fast-properties-1.0.2.tgz#f3f5c0c3ba7299a7ef99427e44633257ade43320"
 
+toolkitt@1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/toolkitt/-/toolkitt-1.0.0.tgz#ded9750bb56ae5107be299ed0c761734d0484b38"
+
 tough-cookie@~2.3.0:
   version "2.3.2"
   resolved "https://registry.yarnpkg.com/tough-cookie/-/tough-cookie-2.3.2.tgz#f081f76e4c85720e6c37a5faced737150d84072a"

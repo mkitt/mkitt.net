@@ -31,8 +31,9 @@ const linkStyles = css(
   hover(colorBlue),
 )
 
-export default() =>
+export default() => (
   <nav className={navStyles}>
     <a className={linkStyles} href="/">mkitt.net</a>
   </nav>
+)
 

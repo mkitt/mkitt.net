@@ -1,9 +1,13 @@
 // @flow
 import React from 'react'
-import { before, css, select } from '../styles/jss'
+import Main from '../components/Main'
+import { before, css, media, select } from '../styles/jss'
 import { absolute, proseStyles, relative, sticky, zIndex2 } from '../styles/jso'
 
-const padLeftStyle = css({ paddingLeft: '2.5rem' })
+const padLeftStyle = css(
+  { paddingLeft: '2.5rem' },
+)
+
 const iconPositionStyle = css(
   absolute,
   { top: '1.25rem', left: 0 },
@@ -18,9 +22,17 @@ type Props = {
 
 const markdownStyles = css(
   relative,
-  { maxWidth: '45rem' },
-  { padding: '3.125rem 1rem 1rem' },
-  { margin: '0 auto' },
+  {
+    maxWidth: '45rem',
+    paddingRight: 10,
+    paddingLeft: 10,
+    marginRight: 'auto',
+    marginLeft: 'auto',
+  },
+  media('(min-width: 45em)', {
+    paddingRight: 0,
+    paddingLeft: 0,
+  }),
   select('& h1', sticky, { top: '0.75rem' }, zIndex2),
   select('& #ello', padLeftStyle),
   select('& #mode-set', padLeftStyle),
@@ -51,13 +63,13 @@ const markdownStyles = css(
 
 )
 /* eslint-disable react/no-danger */
-export default(props: Props) =>
-  <main role="main">
-    <div
-      className={`${proseStyles} ${markdownStyles}`}
+export default(props: Props) => (
+  <Main hasNavbar >
+    <section
+      className={`${proseStyles} ${markdownStyles} markdown`}
       dangerouslySetInnerHTML={{ __html: props.content }}
     />
-  </main>
-
+  </Main>
+)
 /* eslint-enable react/no-danger */
 

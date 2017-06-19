@@ -16,7 +16,8 @@
     "glamor-server": "3.0.0-1",
     "marked": "0.3.6",
     "react": "15.5.4",
-    "react-dom": "15.5.4"
+    "react-dom": "15.5.4",
+    "toolkitt": "1.0.0"
   },
   "devDependencies": {
     "babel-core": "6.24.1",

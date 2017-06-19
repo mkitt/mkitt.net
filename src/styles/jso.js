@@ -26,16 +26,11 @@ const proseLinks = {
 }
 export const proseStyles = css({
   '& h1': {
-    marginTop: '1rem',
     marginBottom: '2rem',
-    fontSize: '1.5rem',
-    fontWeight: 700,
   },
   '& h2': {
     paddingTop: '1.125rem',
     borderBottom: '1px solid',
-    fontWeight: 700,
-    fontSize: '1.125rem',
   },
   '& h2 ~ h2': {
     marginTop: '1.5rem',
@@ -43,12 +38,9 @@ export const proseStyles = css({
   '& h3': {
     position: 'relative',
     paddingTop: '1rem',
-    fontWeight: 700,
-    fontSize: '1rem',
   },
   '& h4': {
-    fontWeight: 400,
-    fontSize: '0.875rem',
+    position: 'relative',
   },
   '& p': {
     padding: 0,

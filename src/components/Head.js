@@ -19,7 +19,7 @@ insertRule(`
     -webkit-font-smoothing: antialiased;
   }
   html {
-    font: normal 400 100% / 1.5 -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
+    font: normal 400 100% / 1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
@@ -38,6 +38,7 @@ insertRule(`
   }
   h1, h2, h3, h4, h5, h6 {
     margin: 0;
+    font-weight: 300;
     line-height: 1.25;
   }
   a {
@@ -45,10 +46,78 @@ insertRule(`
     background-color: transparent;
     -webkit-text-decoration-skip: objects;
   }
+  @media print {
+    *, *:before, *:after {
+      background: transparent !important;
+      color: #000 !important;
+      box-shadow: none !important;
+      text-shadow: none !important;
+    }
+    html {
+      font-size: 11px;
+    }
+    nav {
+      display: none;
+    }
+    pre {
+      white-space: pre-wrap !important;
+    }
+    pre, blockquote {
+      page-break-inside: avoid;
+    }
+    img[alt="matthew kitt"] {
+      display: none;
+    }
+    img {
+      page-break-inside: avoid;
+    }
+    p, h2, h3 {
+      orphans: 3;
+      widows: 3;
+    }
+    h2, h3 {
+      page-break-after: avoid;
+    }
+    main {
+      padding-top: 0 !important;
+      padding-bottom: 0 !important;
+    }
+    .markdown {
+      max-width: none !important;
+    }
+    .markdown h1 {
+      position: static !important;
+      margin-bottom: 0 !important;
+      font-size: 15px !important;
+    }
+    .markdown h2 {
+      padding-top: 5px !important;
+      font-size: 14px !important;
+    }
+    .markdown h2 ~ h2 {
+      margin-top: 5px !important;
+    }
+    .markdown h3 {
+      padding-top: 5px !important;
+      padding-left: 0 !important;
+      font-size: 13px !important;
+    }
+    .markdown h4 {
+      font-size: 12px !important;
+      padding-left: 0 !important;
+    }
+    .markdown #the-firm-graphics,
+    .markdown #the-firm-graphics + h4,
+    .markdown #the-firm-graphics + h4 + p,
+    .markdown #the-firm-graphics + h4 + p + p,
+    .markdown #the-firm-graphics + h4 + p + p + p {
+      display: none !important;
+    }
+  }
 `.replace(/\n/g, ''))
 
 /* eslint-disable react/no-danger */
-export default (props: Props) =>
+export default (props: Props) => (
   <head>
     <meta charSet="utf-8" />
     <meta httpEquiv="x-ua-compatible" content="ie=edge" />
@@ -71,5 +140,6 @@ export default (props: Props) =>
     <meta name="robots" content="index, follow" />
     <style dangerouslySetInnerHTML={{ __html: props.css }} />
   </head>
+)
 /* eslint-enable react/no-danger */
 

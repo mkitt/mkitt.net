@@ -2,9 +2,9 @@
 import React from 'react'
 import { renderToStaticMarkup } from 'react-dom/server'
 import { renderStaticOptimized } from 'glamor-server'
+import Index from './pages/Index'
+import Resume from './pages/Resume'
 import Root from './components/Root'
-import Index from './components/Index'
-import Resume from './components/Resume'
 
 export default(locals: any, callback: Function) => {
   const props = { path: locals.path, ...locals.config }
