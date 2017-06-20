@@ -16,7 +16,7 @@ const subheadingStyle = css({
 })
 
 const copyStyle = css({
-  maxWidth: 640,
+  maxWidth: 620,
 })
 
 const introStyle = css({

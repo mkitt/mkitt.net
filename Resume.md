@@ -13,7 +13,7 @@ management and mentorship.
 #### Co-Founder / Front-end lead, 2013 – 2017
 An ad-free social network and marketplace for creators. Involved on multiple
 levels from product concept, architecture and UX to development of the large
-scale applications. As co-founder, helped organization navigate multiple funding
+scale applications. As co-founder, helped organize and navigate multiple funding
 rounds and various business phases.
 
 [ello.co](http://ello.co/) / [github/ello](https://github.com/ello/)
@@ -26,7 +26,7 @@ business development and team operations.
 
 Clients: Ello, Google, Qdoba, Cirrus MD, Inspirato, Coraline, Pinnacol Assurance
 
-[modeset.com](http://modeset.com/) / [github/modeset](https://github.com/modeset/)
+[github/modeset](https://github.com/modeset/)
 
 ### Factory Labs
 #### Sr. Director of Interactive Services, 2005 – 2011
@@ -41,7 +41,7 @@ Oversight and development on framework level code. Research and development.
 Clients: Audi USA, The North Face, Oakley, Vans, Callaway, Paramount,
 Sony, Happy Madison, Airwalk, Beatport, Brine, Rawlings
 
-[factorylabs.com](http://factorylabs.com/) / [github/factorylabs](https://github.com/factorylabs/)
+[github/factorylabs](https://github.com/factorylabs/)
 
 ### The Firm Graphics
 #### Developer/Interaction Designer, 2001 – 2005
