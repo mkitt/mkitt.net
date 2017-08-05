@@ -59,7 +59,7 @@ const copyStyle = css({
   marginTop: 0,
 })
 
-export default (props:ExperienceProps) => (
+export default (props: ExperienceProps) => (
   <div className={style}>
     <Subheading className={subheadingStyle}>
       <Icon kind={props.icon} />
