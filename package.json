@@ -12,11 +12,11 @@
     "lint": "eslint src"
   },
   "dependencies": {
-    "glamor": "3.0.0-1",
-    "glamor-server": "3.0.0-1",
+    "glamor": "3.0.0-3",
+    "glamor-server": "3.0.0-3",
     "marked": "0.3.6",
-    "react": "15.5.4",
-    "react-dom": "15.5.4",
+    "react": "15.6.1",
+    "react-dom": "15.6.1",
     "toolkitt": "1.0.0"
   },
   "devDependencies": {
@@ -29,9 +29,9 @@
     "babel-preset-stage-0": "6.24.1",
     "browser-sync": "2.18.12",
     "browser-sync-webpack-plugin": "1.1.4",
-    "eslint": "3.19.0",
-    "eslint-config-mkitt": "1.0.0",
-    "flow-bin": "0.47.0",
+    "eslint": "4.1.1",
+    "eslint-config-mkitt": "2.1.0",
+    "flow-bin": "0.52.0",
     "json-loader": "0.5.4",
     "static-site-generator-webpack-plugin": "3.4.1",
     "webpack": "1.13.3",
