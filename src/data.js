@@ -79,8 +79,9 @@ module.exports = {
       },
       icon: 'ak',
       title: 'amykitt.com',
-      repoUrl: 'https://github.com/mkitt/amykitt.com/tree/add/version2',
-      description: 'A single page gallery app to showcase the design work of my immensly talented wife. Based on an ejected create-react-app, explores redux without redux by utlizing a local state container. Work in progress.',
+      url: 'http://amykitt.com',
+      repoUrl: 'https://github.com/mkitt/amykitt.com/',
+      description: 'A single page gallery app to showcase the design work of my immensly talented wife. Explores redux without redux by utlizing a local state container. Work in progress.',
     },
     {
       id: 'rokk3rfuel',
