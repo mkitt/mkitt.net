@@ -8,12 +8,12 @@ type Props = {
 }
 
 const baseStyle = css({
-  paddingBottom: 50,
+  paddingBottom: 48,
 })
 
 const hasNavbarStyle = css(
   { ...baseStyle },
-  { paddingTop: 50 },
+  { paddingTop: 48 },
 )
 
 const Main = ({ children, hasNavbar, ...props }: Props) => (

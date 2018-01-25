@@ -9,6 +9,10 @@ const style = css(
     paddingLeft: 10,
     marginRight: 'auto',
     marginLeft: 'auto',
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    minHeight: 'calc(100vh - 96px)',
   },
   select('& + &', { marginTop: 96 }),
   media('(min-width: 75em)', {

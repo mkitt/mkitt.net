@@ -14,7 +14,7 @@
   "dependencies": {
     "glamor": "3.0.0-3",
     "glamor-server": "3.0.0-3",
-    "marked": "0.3.6",
+    "marked": "0.3.12",
     "react": "15.6.1",
     "react-dom": "15.6.1",
     "toolkitt": "1.0.0"

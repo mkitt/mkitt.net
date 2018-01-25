@@ -1,5 +1,5 @@
 # [Matthew Kitt](http://mkitt.net/ "mkitt.net")
-<img alt="matthew kitt" src="/assets/matthew-kitt-avatar-256.jpg" width="128" height="128" />
+<img alt="matthew kitt" src="/assets/mkitt-mk-256.png" width="128" height="128" />
 
 ## Qualifications
 Over fifteen years experience developing large scale web and mobile

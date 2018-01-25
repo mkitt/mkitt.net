@@ -7,7 +7,7 @@ const resume = marked(rawResume)
 
 module.exports = {
   name: 'Matthew Kitt',
-  avatar: '/assets/matthew-kitt-avatar-256.jpg',
+  avatar: '/assets/mkitt-mk-256.png',
   title: 'mkitt',
   url: 'https://mkitt.net',
   description: 'User interface developer for web and mobile platforms.',
