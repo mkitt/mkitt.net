@@ -138,6 +138,7 @@ export default (props: Props) => (
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="referrer" content="always" />
     <meta name="robots" content="index, follow" />
+    <link href="/favicon.svg" color="#111" rel="mask-icon" />
     <style dangerouslySetInnerHTML={{ __html: props.css }} />
   </head>
 )
