@@ -1,8 +1,12 @@
 [ignore]
-.*/node_modules/fbjs/.*
 
 [include]
 
 [libs]
 
+[lints]
+all=warn
+untyped-import=off
+
 [options]
+include_warnings=true

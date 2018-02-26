@@ -1,5 +1,6 @@
 .DS_Store
+.next
 *.log
 *.map
+build
 node_modules
-deliverables
