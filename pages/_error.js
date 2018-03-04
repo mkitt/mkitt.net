@@ -27,11 +27,11 @@ export default class extends Component<Props> {
           <Title>{this.props.statusCode}</Title>
           <Copy>{this.props.statusMessage}</Copy>
           <Copy>
-            <Link href="https://mkitt.net" title="mkitt.net">mkitt.net</Link>
+            <Link href="https://mkitt.net" title="🏔">mkitt.net</Link>
             <span> | </span>
             <Link href="https://github.com/mkitt" title="@mkitt">github/mkitt</Link>
             <span> | </span>
-            <Link href="mailto:hello@mkitt.net" title="hello">hello@mkitt.net</Link>
+            <Link href="mailto:hello@mkitt.net" title="👋">hello@mkitt.net</Link>
           </Copy>
         </Main>
       </Layout>
