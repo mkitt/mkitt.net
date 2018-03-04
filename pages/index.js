@@ -8,7 +8,7 @@ const components = {
   heading: (props: { children: Node, level: number }) => (
     props.level === 1 ?
       <Title {...props} /> :
-      <ReactMarkdown.renderers.Heading {...props} />
+      <ReactMarkdown.renderers.heading {...props} />
   ),
   link: Link,
   linkReference: Link,

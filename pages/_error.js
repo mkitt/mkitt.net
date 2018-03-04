@@ -29,7 +29,7 @@ export default class extends Component<Props> {
           <Copy>
             <Link href="https://mkitt.net" title="mkitt.net">mkitt.net</Link>
             <span> | </span>
-            <Link href="mailto:hello@mkitt.net" title="hello@">hello@mkitt.net</Link>
+            <Link href="mailto:hello@mkitt.net" title="hello">hello@mkitt.net</Link>
           </Copy>
         </Main>
       </Layout>

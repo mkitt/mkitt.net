@@ -4,17 +4,20 @@ import styled, { hydrate, keyframes } from 'react-emotion'
 
 export default undefined
 type Props = {}
+type ChildProps = {
+  children: Node | number,
+}
 
 // -------------------------------------
 // Styles
 
-export const color = '#111'
+export const color = '#333'
 const highlight = '#0074d9'
 const easeInOutCubic = 'cubic-bezier(0.645, 0.045, 0.355, 1)'
 
 const animateMark = keyframes({
   '0%': { transform: 'scale(0)' },
-  '100%': { transform: 'scale(0.3)' },
+  '100%': { transform: 'scale(0.4)' },
 })
 
 export const cssGlobal = `
@@ -48,7 +51,7 @@ export const cssGlobal = `
     color: inherit;
     background-color: transparent;
   }
-`.replace(/\n|\s/g, '')
+`.replace(/\n/g, '').replace(', ', ',').replace(' {', '{')
 
 // -------------------------------------
 // Components
@@ -77,8 +80,8 @@ export const Main = styled.main({
   display: 'flex',
   flexDirection: 'column',
   justifyContent: 'center',
-  maxWidth: '75rem',
-  minHeight: 'calc(100vh - 1rem)',
+  maxWidth: '60rem',
+  minHeight: 'calc(100vh - 5rem)',
   marginRight: 'auto',
   marginLeft: 'auto',
   padding: '1rem',
@@ -90,11 +93,11 @@ export const Main = styled.main({
 // -------------------------------------
 
 const Mark = () => (
-  <svg width={96} height={48} viewBox="0 0 30 15" >
+  <svg width="5em" height="2.5em" viewBox="0 0 80 40">
     <g stroke="none" strokeWidth="1" fill="currentColor" fillRule="evenodd">
-      <path d="M30,13.2423 C30,13.7706333 29.5716667,14.1989667 29.0433333,14.1989667 C28.515,14.1989667 28.0866667,13.7706333 28.0866667,13.2423 C28.0866667,12.7139667 28.515,12.2856333 29.0433333,12.2856333 C29.5716667,12.2856333 30,12.7139667 30,13.2423" />
-      <path d="M22.6569,0.483833333 L20.5219,3.61516667 L22.5999,6.4045 L26.7559,0.483833333 L22.6569,0.483833333 Z M14.7145667,0.483833333 L14.7145667,14.1761667 L18.0165667,14.1761667 L18.0165667,7.5415 L22.7989,14.1761667 L26.8695667,14.1761667 L19.9239,4.44083333 L18.0165667,7.1435 L18.0165667,0.483833333 L14.7145667,0.483833333 Z" />
-      <path d="M13.4646,-6.66666667e-05 L6.74626667,5.32326667 L-6.66666666e-05,-6.66666667e-05 L-6.66666666e-05,4.1846 L6.74626667,9.53593333 L10.1339333,6.88893333 L10.1339333,14.1762667 L13.4646,14.1762667 L13.4646,-6.66666667e-05 Z M-6.66666666e-05,14.1762667 L3.38726667,14.1762667 L3.38726667,8.19826667 L-6.66666666e-05,5.5226 L-6.66666666e-05,14.1762667 Z" />
+      <path d="M77.5,40 C76.119338,40 75,38.880662 75,37.5 C75,36.119338 76.119338,35 77.5,35 C78.880662,35 80,36.119338 80,37.5 C80,38.880662 78.880662,40 77.5,40 Z" />
+      <path d="M40,1 L49,1 L49,20.9960318 L54,13 L72,40 L61,40 L49,22.0715242 L49,40 L40,40 L40,1 Z M61,19.5 L55,10.4960318 L60,1 L71,1 L61,19.5 Z" />
+      <path d="M0,40 L9,40 L9,22 L0,15 L0,40 Z M36,0 L18,14 L0,0 L0,11 L18,25 L27,18 L27,40 L36,40 L36,0 Z" />
     </g>
   </svg>
 )
@@ -102,11 +105,14 @@ const Mark = () => (
 // -------------------------------------
 
 const HomeElement = styled.a({
-  position: 'absolute',
-  bottom: '0.5rem',
-  right: '0.5rem',
+  position: 'fixed',
+  bottom: 0,
+  right: 0,
+  padding: '1rem 0.25rem 0.25rem 1rem',
+  fontSize: '1rem',
   transformOrigin: 'bottom right',
   animation: `0.25s ${easeInOutCubic} 2s 1 ${animateMark} both`,
+  backgroundImage: 'linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 15%, rgba(255,255,255,1) 100%)',
 })
 
 const HomeLink = () => (
@@ -114,37 +120,39 @@ const HomeLink = () => (
     <Mark />
   </HomeElement>
 )
-
 // -------------------------------------
 
 const TitleElement = styled.h1({
-  display: 'flex',
-  alignItems: 'flex-end',
+  display: 'inline-flex',
+  alignItems: 'baseline',
   justifyContent: 'space-between',
   maxWidth: '20rem',
-  paddingBottom: '2rem',
+  minWidth: '15rem',
+  paddingBottom: '1.25rem',
   lineHeight: 1,
-  fontSize: '1.25rem',
-  fontWeight: 300,
+  fontSize: '1rem',
   borderBottom: '1px solid',
 })
 
-type TitleProps = {
-  children: Node | number,
-}
+const TitleSpan = styled.span({
+  display: 'inline-block',
+  marginLeft: '3rem',
+  fontSize: '1.25rem',
+  fontWeight: 300,
+})
 
-export const Title = ({ children, ...props }: TitleProps) => (
+export const Title = ({ children, ...props }: ChildProps) => (
   <TitleElement {...props}>
     <Mark />
-    {children}
+    <TitleSpan>{children}</TitleSpan>
   </TitleElement>
 )
-
 // -------------------------------------
 
 export const Copy = styled.p({
   marginBottom: '1rem',
   marginTop: 0,
+  fontWeight: 300,
   ':first-of-type': {
     marginBottom: '2rem',
     marginTop: '3rem',
@@ -156,6 +164,8 @@ export const Copy = styled.p({
 
 export const Link = styled.a({
   transition: 'color 0.4s',
+  textDecoration: 'none',
+  fontWeight: 500,
   '&:hover': {
     color: highlight,
   },
