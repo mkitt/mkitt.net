@@ -22,14 +22,14 @@
     "react": "16.2.0",
     "react-dom": "16.2.0",
     "react-emotion": "9.0.2",
-    "react-markdown": "3.2.2"
+    "react-markdown": "3.3.0"
   },
   "devDependencies": {
     "babel-preset-mkitt": "1.0.0",
-    "eslint": "4.18.1",
-    "eslint-config-mkitt": "4.2.1",
-    "flow-bin": "0.66.0",
-    "nodemon": "1.15.1"
+    "eslint": "4.19.0",
+    "eslint-config-mkitt": "4.3.0",
+    "flow-bin": "0.68.0",
+    "nodemon": "1.17.2"
   },
   "babel": {
     "presets": [
