@@ -9,4 +9,4 @@ architecture, product development & team management.
 
 [email]: mailto:hello@mkitt.net "👋"
 [github]: https://github.com/mkitt "@mkitt"
-[resume]: https://mkitt.net/resume "📝"
+[resume]: /resume "📝"
