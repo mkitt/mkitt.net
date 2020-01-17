@@ -1,6 +1,6 @@
 import React from 'react'
 import Document, { Main, NextScript } from 'next/document'
-import { cssGlobal } from './_components'
+import { cssGlobal } from '../components'
 
 const description = 'User interface developer for web and mobile platforms.'
 const icon = '/favicon.svg'

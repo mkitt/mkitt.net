@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "build": "next build && next export -o build",
-    "postbuild": "mv ./build/index.html ./ && mv ./build/404.html ./ && mv ./build/resume/index.html ./resume/ && rm -r ./build",
+    "postbuild": "mv ./build/index.html ./ && mv ./build/404.html ./ && mv ./build/resume.html ./resume/index.html && rm -r ./build",
     "dev": "next"
   },
   "dependencies": {
@@ -40,7 +40,7 @@
     }
   },
   "lint-staged": {
-    "./**/*.{css,html,js,jsx,json,gql,md,ts,tsx,yml}": [
+    "./**/*.{js,jsx,json,md}": [
       "prettier --write",
       "git add"
     ]

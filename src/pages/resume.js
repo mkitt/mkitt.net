@@ -12,7 +12,7 @@ import {
   Rule,
   SubheadingWithMark,
   TitleWithMark,
-} from './_components'
+} from '../components'
 
 const Main = styled.main({
   position: 'relative',
@@ -37,11 +37,7 @@ const StyledParagraph = styled(Paragraph)({
   },
 })
 
-const headings = [
-  TitleWithMark,
-  Heading,
-  SubheadingWithMark,
-]
+const headings = [TitleWithMark, Heading, SubheadingWithMark]
 
 const components = {
   heading: props => <HeadingRenderer headings={headings} {...props} />,
@@ -63,11 +59,7 @@ class Resume extends Component {
     const { source } = this.props
     return (
       <Fragment>
-        <ReactMarkdown
-          renderers={components}
-          skipHtml
-          source={source}
-        />
+        <ReactMarkdown renderers={components} skipHtml source={source} />
         <HomeLink />
       </Fragment>
     )

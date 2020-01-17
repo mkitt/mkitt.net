@@ -5,7 +5,7 @@ import {
   MainLanding,
   ParagraphLanding,
   TitleWithMark,
-} from './_components'
+} from '../components'
 
 class NotFound extends Component {
   static async getInitialProps({ res, err }) {

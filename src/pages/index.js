@@ -7,7 +7,7 @@ import {
   MainLanding,
   ParagraphLanding,
   TitleWithMark,
-} from './_components'
+} from '../components'
 
 const headings = [TitleWithMark]
 
