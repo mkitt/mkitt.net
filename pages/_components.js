@@ -2,7 +2,13 @@ import { keyframes } from '@emotion/core'
 import styled from '@emotion/styled'
 import React from 'react'
 import {
-  Ello, Imagine, FactoryLabs, Mark, MuveHealth, ModeSet, TheFirmGraphics,
+  Ello,
+  Highwing,
+  FactoryLabs,
+  Mark,
+  MuveHealth,
+  ModeSet,
+  TheFirmGraphics,
 } from './_assets'
 
 const noob = {}
@@ -71,13 +77,17 @@ export const cssGlobal = `
       page-break-after: avoid;
     }
   }
-`.replace(/\n/g, '').replace(', ', ',').replace(' {', '{')
+`
+  .replace(/\n/g, '')
+  .replace(', ', ',')
+  .replace(' {', '{')
 
 // -------------------------------------
 
 const HomeElement = styled.a({
   animation: `0.25s ${easeInOutCubic} 2s 1 ${animateMark} both`,
-  backgroundImage: 'linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 15%, rgba(255,255,255,1) 100%)',
+  backgroundImage:
+    'linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 15%, rgba(255,255,255,1) 100%)',
   bottom: 0,
   fontSize: '1rem',
   padding: '1rem 0.25rem 0.25rem 1rem',
@@ -97,21 +107,24 @@ export const HomeLink = () => (
 
 // -------------------------------------
 
-export const Title = styled.h1({
-  alignItems: 'baseline',
-  borderBottom: '1px solid',
-  display: 'inline-flex',
-  fontSize: '1.25rem',
-  fontWeight: 300,
-  justifyContent: 'space-between',
-  lineHeight: 1,
-  minWidth: '15rem',
-  paddingBottom: '1.25rem',
-  width: '100%',
-  '& > svg': {
-    fontSize: '1rem',
+export const Title = styled.h1(
+  {
+    alignItems: 'baseline',
+    borderBottom: '1px solid',
+    display: 'inline-flex',
+    fontSize: '1.25rem',
+    fontWeight: 300,
+    justifyContent: 'space-between',
+    lineHeight: 1,
+    minWidth: '15rem',
+    paddingBottom: '1.25rem',
+    width: '100%',
+    '& > svg': {
+      fontSize: '1rem',
+    },
   },
-}, useCss)
+  useCss,
+)
 
 const TitleText = styled.span({
   display: 'inline-block',
@@ -125,21 +138,24 @@ export const TitleWithMark = ({ children, ...props }) => (
   </Title>
 )
 
-export const Heading = styled.h2({
-  fontSize: '0.875rem',
-  textTransform: 'uppercase',
-  marginBottom: '1rem',
-  marginTop: '2rem',
-  '&:first-of-type': {
-    marginTop: '3rem',
-    marginBottom: 0,
-  },
-  '@media print': {
+export const Heading = styled.h2(
+  {
+    fontSize: '0.875rem',
+    textTransform: 'uppercase',
+    marginBottom: '1rem',
+    marginTop: '2rem',
     '&:first-of-type': {
-      marginTop: '2.5rem',
+      marginTop: '3rem',
+      marginBottom: 0,
+    },
+    '@media print': {
+      '&:first-of-type': {
+        marginTop: '2.5rem',
+      },
     },
   },
-}, useCss)
+  useCss,
+)
 
 const SubheadingMark = styled.span({
   background: 'transparent no-repeat top left',
@@ -156,14 +172,17 @@ const SubheadingMark = styled.span({
   },
 })
 
-export const Subheading = styled.h3({
-  fontSize: '0.9375rem',
-  fontWeight: 500,
-  position: 'relative',
-}, useCss)
+export const Subheading = styled.h3(
+  {
+    fontSize: '0.9375rem',
+    fontWeight: 500,
+    position: 'relative',
+  },
+  useCss,
+)
 
 const marks = [
-  { icon: <Imagine />, id: 'imagine' },
+  { icon: <Highwing />, id: 'highwing' },
   { icon: <MuveHealth />, id: 'muve-health' },
   { icon: <Ello />, id: 'ello' },
   { icon: <ModeSet />, id: 'mode-set' },
@@ -175,28 +194,26 @@ export const SubheadingWithMark = ({ children, id, ...props }) => {
   const index = marks.findIndex(mark => mark.id === id)
   return (
     <Subheading id={id} {...props}>
-      { index > -1 && (
-      <SubheadingMark>
-        { marks[index].icon }
-      </SubheadingMark>
-      )}
+      {index > -1 && <SubheadingMark>{marks[index].icon}</SubheadingMark>}
       {children}
     </Subheading>
   )
 }
 
-export const TextHeading = styled.h4({
-  fontSize: '1.25rem',
-  fontWeight: 800,
-}, useCss)
+export const TextHeading = styled.h4(
+  {
+    fontSize: '1.25rem',
+    fontWeight: 800,
+  },
+  useCss,
+)
 
-const flatten = (text, child) => (
+const flatten = (text, child) =>
   typeof child === 'string'
     ? text + child
     : React.Children.toArray(child.props.children).reduce(flatten, text)
-)
 
-export const HeadingRenderer = (props) => {
+export const HeadingRenderer = props => {
   const { headings, level, children } = props
   const Comp = headings[level - 1] || TextHeading
   const kids = React.Children.toArray(children)
@@ -207,47 +224,73 @@ export const HeadingRenderer = (props) => {
 
 // -------------------------------------
 
-export const Link = styled.a({
-  fontWeight: 500,
-  textDecoration: 'none',
-  transition: 'color 0.4s',
-  '&:hover': {
-    color: '#0074d9',
+export const Link = styled.a(
+  {
+    fontWeight: 500,
+    textDecoration: 'none',
+    transition: 'color 0.4s',
+    '&:hover': {
+      color: '#0074d9',
+    },
   },
-}, useCss)
+  useCss,
+)
 
-export const List = styled.ul({
-  margin: '0 0 1rem',
-  padding: 0,
-  listStyle: 'none',
-}, useCss)
-
-export const ListItem = styled.li({
-  fontSize: '0.875rem',
-  fontWeight: 300,
-}, useCss)
-
-export const Paragraph = styled.p({
-  fontWeight: 300,
-  marginBottom: '1rem',
-  marginTop: 0,
-}, useCss)
-
-export const ParagraphWithIntro = styled(Paragraph)({
-  '&:first-of-type': {
-    fontSize: '1.125rem',
-    marginBottom: '2rem',
-    marginTop: '3rem',
+export const List = styled.ul(
+  {
+    margin: '0 0 1rem',
+    padding: 0,
+    listStyle: 'none',
   },
-}, useCss)
+  useCss,
+)
 
-export const Rule = styled.hr({
-  margin: '-1.5rem 0 1rem',
-  fontSize: '1.25rem',
-  border: 0,
-  '&::before': {
-    content: '"......"',
+export const ListItem = styled.li(
+  {
+    fontSize: '0.875rem',
+    fontWeight: 300,
   },
-}, useCss)
+  useCss,
+)
+
+export const MainLanding = styled.main({
+  display: 'flex',
+  flexDirection: 'column',
+  justifyContent: 'center',
+  marginLeft: 'auto',
+  marginRight: 'auto',
+  maxWidth: '43rem',
+  minHeight: 'calc(100vh - 5rem)',
+  padding: '1rem',
+})
+
+export const Paragraph = styled.p(
+  {
+    fontWeight: 300,
+    marginBottom: '1rem',
+    marginTop: 0,
+  },
+  useCss,
+)
+
+export const ParagraphLanding = styled(Paragraph)(
+  {
+    marginTop: '2rem',
+    textAlign: 'right',
+  },
+  useCss,
+)
+
+export const Rule = styled.hr(
+  {
+    margin: '-1.5rem 0 1rem',
+    fontSize: '1.25rem',
+    border: 0,
+    '&::before': {
+      content: '"......"',
+    },
+  },
+  useCss,
+)
 
 export default undefined

@@ -1,5 +1,6 @@
 .DS_Store
 .next
+.vim
 *.log
 *.map
 build

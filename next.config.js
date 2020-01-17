@@ -13,7 +13,10 @@ module.exports = {
       '/resume': {
         page: '/resume',
         query: {
-          source: fs.readFileSync(path.join(__dirname, 'resume', 'Readme.md'), 'utf-8'),
+          source: fs.readFileSync(
+            path.join(__dirname, 'resume', 'Readme.md'),
+            'utf-8',
+          ),
         },
       },
       '/404.html': { page: '_error' },

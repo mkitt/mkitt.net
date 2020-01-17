@@ -8,9 +8,12 @@ const image = '/apple-touch-icon.png'
 const name = 'Matthew Kitt'
 const url = 'https://mkitt.net'
 
-const getTitle = (pathname) => {
-  const path = pathname.includes('404') || pathname.includes('error') ? '404' : pathname
-  return `mkitt | ${path === '/' ? ':wave:' : path.replace('/', ' ').replace(/\.[^/.]+$/, '')}`
+const getTitle = pathname => {
+  const path =
+    pathname.includes('404') || pathname.includes('error') ? '404' : pathname
+  return `mkitt | ${
+    path === '/' ? ':wave:' : path.replace('/', ' ').replace(/\.[^/.]+$/, '')
+  }`
 }
 
 class Doc extends Document {
@@ -34,7 +37,11 @@ class Doc extends Document {
           <meta name="name" itemProp="name" content={name} />
           <meta name="image" itemProp="image" content={image} />
           <meta name="url" itemProp="url" content={url} />
-          <meta name="description" itemProp="description" content={description} />
+          <meta
+            name="description"
+            itemProp="description"
+            content={description}
+          />
           <meta property="og:type" content="website" />
           <meta property="og:site_name" content={name} />
           <meta property="og:title" content={title} />
@@ -48,12 +55,11 @@ class Doc extends Document {
           <link rel="prefetch" href="/" />
           <link rel="prefetch" href="/resume" />
           <link rel="prefetch" href="https://github.com/mkitt" />
-          { /* eslint-disable-next-line react/no-danger */ }
           <style dangerouslySetInnerHTML={{ __html: cssGlobal }} />
         </head>
         <body>
           <Main />
-          { process.env.NODE_ENV === 'development' && <NextScript /> }
+          {process.env.NODE_ENV === 'development' && <NextScript />}
         </body>
       </html>
     )

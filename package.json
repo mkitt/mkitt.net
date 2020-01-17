@@ -8,24 +8,21 @@
   "scripts": {
     "build": "next build && next export -o build",
     "postbuild": "mv ./build/index.html ./ && mv ./build/404.html ./ && mv ./build/resume/index.html ./resume/ && rm -r ./build",
-    "dev": "next",
-    "lint": "eslint ./"
+    "dev": "next"
   },
   "dependencies": {
-    "@emotion/core": "10.0.10",
-    "@emotion/styled": "10.0.10",
-    "next": "8.1.0",
-    "react": "16.8.6",
-    "react-dom": "16.8.6",
-    "react-markdown": "4.0.8"
+    "@emotion/core": "10.0.27",
+    "@emotion/styled": "10.0.27",
+    "next": "9.2.0",
+    "react": "16.12.0",
+    "react-dom": "16.12.0",
+    "react-markdown": "4.3.1"
   },
   "devDependencies": {
-    "babel-plugin-emotion": "10.0.9",
-    "eslint": "5.16.0",
-    "eslint-config-airbnb": "17.1.0",
-    "eslint-plugin-import": "2.17.2",
-    "eslint-plugin-jsx-a11y": "6.2.1",
-    "eslint-plugin-react": "7.12.4"
+    "babel-plugin-emotion": "10.0.27",
+    "husky": "4.0.10",
+    "lint-staged": "9.5.0",
+    "prettier": "1.19.1"
   },
   "babel": {
     "presets": [
@@ -37,24 +34,20 @@
       ]
     ]
   },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ],
-  "eslintConfig": {
-    "extends": [
-      "airbnb"
-    ],
-    "rules": {
-      "react/jsx-filename-extension": "off",
-      "react/jsx-key": "error",
-      "react/prop-types": "off",
-      "semi": [
-        "error",
-        "never"
-      ]
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
     }
+  },
+  "lint-staged": {
+    "./**/*.{css,html,js,jsx,json,gql,md,ts,tsx,yml}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "all"
   }
 }
