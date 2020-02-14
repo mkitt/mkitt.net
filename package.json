@@ -20,7 +20,7 @@
   },
   "devDependencies": {
     "babel-plugin-emotion": "10.0.27",
-    "husky": "4.0.10",
+    "husky": "4.2.3",
     "lint-staged": "9.5.0",
     "prettier": "1.19.1"
   },
