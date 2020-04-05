@@ -8,7 +8,7 @@ const image = '/apple-touch-icon.png'
 const name = 'Matthew Kitt'
 const url = 'https://mkitt.net'
 
-const getTitle = pathname => {
+const getTitle = (pathname) => {
   const path =
     pathname.includes('404') || pathname.includes('error') ? '404' : pathname
   return `mkitt | ${

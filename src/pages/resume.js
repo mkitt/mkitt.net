@@ -40,14 +40,14 @@ const StyledParagraph = styled(Paragraph)({
 const headings = [TitleWithMark, Heading, SubheadingWithMark]
 
 const components = {
-  heading: props => <HeadingRenderer headings={headings} {...props} />,
-  link: props => <Link {...props} />,
-  linkReference: props => <Link {...props} />,
+  heading: (props) => <HeadingRenderer headings={headings} {...props} />,
+  link: (props) => <Link {...props} />,
+  linkReference: (props) => <Link {...props} />,
   list: List,
   listItem: ListItem,
-  paragraph: props => <StyledParagraph {...props} />,
-  root: props => <Main {...props} />,
-  thematicBreak: props => <Rule {...props} />,
+  paragraph: (props) => <StyledParagraph {...props} />,
+  root: (props) => <Main {...props} />,
+  thematicBreak: (props) => <Rule {...props} />,
 }
 
 class Resume extends Component {

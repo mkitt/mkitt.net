@@ -12,11 +12,11 @@ import {
 const headings = [TitleWithMark]
 
 const components = {
-  heading: props => <HeadingRenderer headings={headings} {...props} />,
-  link: props => <Link {...props} />,
-  linkReference: props => <Link {...props} />,
-  paragraph: props => <ParagraphLanding {...props} />,
-  root: props => <MainLanding {...props} />,
+  heading: (props) => <HeadingRenderer headings={headings} {...props} />,
+  link: (props) => <Link {...props} />,
+  linkReference: (props) => <Link {...props} />,
+  paragraph: (props) => <ParagraphLanding {...props} />,
+  root: (props) => <MainLanding {...props} />,
 }
 
 class Index extends Component {

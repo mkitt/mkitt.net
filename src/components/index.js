@@ -191,7 +191,7 @@ const marks = [
 ]
 
 export const SubheadingWithMark = ({ children, id, ...props }) => {
-  const index = marks.findIndex(mark => mark.id === id)
+  const index = marks.findIndex((mark) => mark.id === id)
   return (
     <Subheading id={id} {...props}>
       {index > -1 && <SubheadingMark>{marks[index].icon}</SubheadingMark>}
@@ -213,7 +213,7 @@ const flatten = (text, child) =>
     ? text + child
     : React.Children.toArray(child.props.children).reduce(flatten, text)
 
-export const HeadingRenderer = props => {
+export const HeadingRenderer = (props) => {
   const { headings, level, children } = props
   const Comp = headings[level - 1] || TextHeading
   const kids = React.Children.toArray(children)
