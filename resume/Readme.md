@@ -13,9 +13,20 @@ management and mentorship.
 
 ## Experience
 
+### Vangst
+
+Principal Engineer, 2020 – Present  
+The premier talent resource for the cannabis industry. Built on a network of the
+industry’s best people and widest-ranging career opportunities, Vangst helps
+employers and employees succeed in cannabis.
+
+[vangst.com](https://vangst.com/) | [github/vangsters](https://github.com/vangsters/)
+
+---
+
 ### Highwing
 
-Principal Engineer, 2018 – Present  
+Principal Engineer, 2018 – 2020  
 A business intelligence and transactional platform connecting brokers
 and carriers through open data in the commercial insuretech space. Responsible
 for architecture and product development across the organization.

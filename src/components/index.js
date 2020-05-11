@@ -9,6 +9,7 @@ import {
   MuveHealth,
   ModeSet,
   TheFirmGraphics,
+  Vangst,
 } from './assets'
 
 const noob = {}
@@ -188,6 +189,7 @@ const marks = [
   { icon: <ModeSet />, id: 'mode-set' },
   { icon: <FactoryLabs />, id: 'factory-labs' },
   { icon: <TheFirmGraphics />, id: 'the-firm-graphics' },
+  { icon: <Vangst />, id: 'vangst' },
 ]
 
 export const SubheadingWithMark = ({ children, id, ...props }) => {
@@ -292,5 +294,3 @@ export const Rule = styled.hr(
   },
   useCss,
 )
-
-export default undefined
