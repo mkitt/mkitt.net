@@ -21,7 +21,7 @@
   "devDependencies": {
     "babel-plugin-emotion": "10.0.33",
     "husky": "4.2.5",
-    "lint-staged": "10.2.11",
+    "lint-staged": "10.4.0",
     "prettier": "2.0.5"
   },
   "babel": {
